@@ -1,27 +1,277 @@
 extends layout
 
 block content
-  h1 Hackathon Starter
-  p.lead A boilerplate for Node.js web applications.
-  hr
-  .row
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
+  body#no-id.layout-1(data-ga-category='', data-ga-label='')
+     // <![endif]
+     .skip
+       a(href='index.html#content-primary') Hoppa till inneh&aring;ll
+     | &#x9;&#x9;
+     div
+       .group.header.header-borderless(role='banner')
+         .group-inner
+           .logo-and-nav-main
+             a.logo(href='index.html', title='Gå till webbplatsens startsida')
+               img(src='images/i/logo.svg', alt='Sandvik Group')
+             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+             .nav-main(role='navigation', data-fetch-children-url='/api/navigation/')
+               ul
+                 li.selected(data-selected='')
+                   a(href='index.html') Hem
+                 | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                 li(data-page-id='3212:sv')
+                   a(href='produkter/index.html') Produkter
+                 | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                 li(data-page-id='3272:sv', data-has-children='')
+                   a(href='nyheter-och-media/index.html') Nyheter &amp; media
+                 | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                 li(data-page-id='5852:sv', data-has-children='')
+                   a(href='investerare/index.html') Investerare
+                 | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                 li(data-page-id='6850:sv', data-has-children='')
+                   a(href='karriar/index.html') Karri&auml;r
+                 | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                 li(data-page-id='41523:sv', data-has-children='')
+                   a(href='om-oss/vart-foretag/index.html') Om oss
+                 | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                 li(data-page-id='28555:sv')
+                   a(href='kontakt/index.html') Kontakt
+           | &#x9;&#x9;&#x9;&#x9;&#x9;
+           .language
+             p
+               | Du bes&ouml;ker:
+               strong Sandvik Group
+             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+             a.change-language-link(href='byt-land-och-sprak/index.html')
+               img(src='images/i/flags/24/se.png', alt='Sweden')
+               span.structural :
+               |  Byt land/spr&aring;k
+           | &#x9;&#x9;&#x9;&#x9;&#x9;
+           //form#search-form.search(role='search', action='sok/index.html', data-querycompletion-url='/api/autocomplete/')
+             label.structural(for='search') S&ouml;k
+             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+             input#search.search-field(type='search', name='q', placeholder='Sök')
+             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+             input.search-submit(type='submit', value='Sök')
+     | &#x9;&#x9;
+     div
+       .hero.hero-layout-1.hero-light
+         img(src='images/filtered/48381/rszww1600h687-90/urbanization-1600x687--658600623-rszww1600h687-90.jpg', alt='Urban skyline')
+         | &#x9;&#x9;&#x9;&#x9;
+         .hero-inner
+           .hero-content.text
+             .hero-content-inner
+               h2.heading-type-1
+                 | Samh&auml;llen i utveckling 
+                 span  H&aring;llbar urbanisering
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               div
+                 p Utveckling av innovativa l&ouml;sningar f&ouml;r en v&auml;rld i f&ouml;r&auml;ndring.
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               p
+                 a.text-button(href='nyheter-och-media/nyheter/2016/06/att-utvecklas-med-kunder-och-samhallen-i-en-foranderlig-varld/index.html')
+                   | L&auml;s artikeln
+     | &#x9;&#x9;
+     #main.cf.group
+       .group-inner
+         #content
+           #content-primary(role='main')
+             h1.structural Hem
+             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+             .grid
+               div(data-column-span='4')
+                 .grid
+                   .teaser.news-teaser(data-column-span='12')
+                     .teaser-heading
+                       h2
+                         | Nyheter
+                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                     .teaser-content
+                       ul
+                         li
+                           span.date-category
+                             | 24 apr 2017
+                             span.structural , 
+                             span Pressmeddelande
+                           | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                           a(href='nyheter-och-media/nyheter/2017/04/delarsrapport-forsta-kvartalet-2017/index.html') Del&aring;rsrapport f&ouml;rsta kvartalet 2017
+                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                         li
+                           span.date-category
+                             | 11 apr 2017
+                             span.structural , 
+                             span Pressmeddelande
+                           | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                           a(href='nyheter-och-media/nyheter/2017/04/sandvik-materials-technology-vinner-stororder-for-gasfaltet-leviathan/index.html') Sandvik Materials Technology vinner stororder f&ouml;r gasf&auml;ltet Leviathan
+                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                         li
+                           span.date-category
+                             | 10 apr 2017
+                             span.structural , 
+                             span Nyhet
+                           | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                           a(href='nyheter-och-media/nyheter/2017/04/sandvik-team-redefines-turning/index.html') Sandvik-team omdefinierar svarvning
+                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                         li
+                           span.date-category
+                             | 5 apr 2017
+                             span.structural , 
+                             span Pressmeddelande
+                           | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                           a(href='nyheter-och-media/nyheter/2017/04/inbjudan-presentation-av-sandviks-rapport-for-forsta-kvartalet-2017/index.html') Inbjudan &ndash; presentation av Sandviks rapport f&ouml;r f&ouml;rsta kvartalet 2017
+                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                         li
+                           span.date-category
+                             | 21 mar 2017
+                             span.structural , 
+                             span Pressmeddelande
+                           | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                           a(href='nyheter-och-media/nyheter/2017/03/arsstamma-i-sandvik-aktiebolag/index.html') &angst;rsst&auml;mma i Sandvik Aktiebolag
+                       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                       p
+                         a.button.button-color-2(href='nyheter-och-media/index.html')
+                           | Fler nyheter
+                   | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                   .teaser.share-teaser(data-column-span='12')
+                     #cision-target
+                       span Aktieinformationen &auml;r inte tillg&auml;nglig f&ouml;r tillf&auml;llet.
+                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                     script#ticker-small(type='text/x-jsrender').
+                       <a href="/se/investerare/sandvik-aktien/">
+                       <h2>Sandvik-aktien</h2>
+                       </a>
+                       <p class="value"><strong>{{>Price}} <span>SEK</span></strong></p>
+                       <p class="change">Förändring: <img src="{{url:ArrowImageurl}}" alt="" /> {{>Delta}}</p>
+                       <p class="timestamp">Uppdaterad {{>lastDate}} {{>lastTime}}</p>
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               div(data-column-span='8')
+                 .grid
+                   .teaser.teaser-floated-image(data-column-span='12')
+                     .teaser-image
+                       img(alt='', src='images/filtered/54894/rszww290-90/meet-sandvik-2017-1-sve-1557116149-rszww290-90.jpg')
+                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                     .teaser-content.text
+                       .teaser-heading
+                         h2
+                           | Nytt nummer av M&ouml;t Sandvik
+                       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                       div
+                         p
+                           span Ett nytt nummer av Sandviks koncerntidning M&ouml;t Sandvik finns nu ute. 
+                           | L&auml;s om v&aring;ra framsteg inom olika omr&aring;den, teknologiutveckling, kunders erfarenheter och v&aring;ra exceptionella medarbetare.
+                       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                       p
+                         a.text-button(href='nyheter-och-media/tidning/index.html')
+                           | G&aring; till M&ouml;t Sandvik
+                   | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                   .teaser(data-column-span='6')
+                     .teaser-image
+                       img(src='images/filtered/42000/rszww880h495-90/vacancies_16_9--1193071630-rszww880h495-90.png', alt='To continue to build a strong workforce we are constantly looking for the talents of today and tomorrow.')
+                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                     .teaser-heading
+                       h2
+                         | Lediga jobb
+                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                     .teaser-content.text
+                       div
+                         p
+                           | Vi vill forts&auml;tta att bygga en stark personalstyrka och s&ouml;ker d&auml;rf&ouml;r st&auml;ndigt efter dagens och morgondagens talanger.
+                       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                       p
+                         a.text-button(href='karriar/lediga-jobb/index.html')
+                           | Se alla v&aring;ra lediga jobb
+                   | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                   .teaser(data-column-span='6')
+                     .teaser-image
+                       img(src='images/filtered/18434/rszww880h495-90/products-services-puff-1504305859-rszww880h495-90.jpg', alt='A wide range of products and services based on industry-leading technologies and extensive R&D.')
+                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                     .teaser-heading
+                       h2
+                         | Produkter och tj&auml;nster
+                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                     .teaser-content.text
+                       div
+                         p
+                           | Produkter och tj&auml;nster f&ouml;r &ouml;kad produktivitet och s&auml;kerhet i ett brett utbud av industrisegment.
+                       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                       p
+                         a.text-button(href='produkter/index.html')
+                           | V&aring;ra produktgrupper
+                   | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                   .teaser.teaser-floated-image(data-column-span='12')
+                     .teaser-image
+                       img(alt='', src='images/filtered/54163/rszww290-90/ar_2016_sve_web_200-1523198801-rszww290-90.png')
+                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                     .teaser-content.text
+                       .teaser-heading
+                         h2
+                           | &angst;rsredovisning 2016
+                       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                       div
+                         p
+                           strong inklusive h&aring;llbarhetsrapport
+                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                         p
+                           | &quot;
+                           span
+                             | Jag &auml;r &ouml;vertygad om att ett starkt resultat handlar om sm&aring; f&ouml;rb&auml;ttringar varje dag.
+                           | &quot;
+                       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                       p
+                         a.text-button(href='http://www.annualreport.sandvik/se/2016/')
+                           | Till rapporten
+     | &#x9;&#x9;
+     .group.footer(role='contentinfo')
+       .group-inner
+         h2.structural Sidfot
+         | &#x9;&#x9;&#x9;&#x9;
+         .footer-left
+           img(src='images/i/logo.svg', alt='Sandvik Group')
+           | &#x9;&#x9;&#x9;&#x9;&#x9;
+           .statement
+             p
+               | Sandvik &auml;r en verkstadskoncern inom gruv- och bergbrytning, metallbearbetning och materialteknik.
+           | &#x9;&#x9;&#x9;&#x9;&#x9;
+           .copyright
+             p Copyright &copy; Sandvik AB; (publ)
+             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+             p Box 510, 101 30 Stockholm, Sverige
+             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+             p Tel 08 456 11 00
+         | &#x9;&#x9;&#x9;&#x9;
+         .footer-right
+           .nav-supp(role='navigation')
+             ul
+               li
+                 a(href='kontakt/index.html') Kontakt
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               li
+                 a(href='om-webbplatsen/index.html') Om webbplatsen
+           | &#x9;&#x9;&#x9;&#x9;&#x9;
+           .nav-social
+             h3.structural Hittas oss p&aring;:
+             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+             ul
+               li.nav-social-facebook
+                 span
+                   a(href='https://www.facebook.com/sandvikkarriar') https://www.facebook.com/sandvikkarriar
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               li.nav-social-twitter
+                 span
+                   a(href='https://twitter.com/Sandviksverige') https://twitter.com/Sandviksverige
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               li.nav-social-instagram
+                 span
+                   a(href='https://instagram.com/sandvikgroup/') https://instagram.com/sandvikgroup/
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               li.nav-social-youtube
+                 span
+                   a(href='https://www.youtube.com/user/sandvik') https://www.youtube.com/user/sandvik
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               li.nav-social-linkedin
+                 span
+                   a(href='https://www.linkedin.com/company/sandvik') https://www.linkedin.com/company/sandvik
+           | &#x9;&#x9;&#x9;&#x9;&#x9;
+           h3.structural Mera Sandvik
+           | &#x9;&#x9;&#x9;&#x9;&#x9;
+  
+          

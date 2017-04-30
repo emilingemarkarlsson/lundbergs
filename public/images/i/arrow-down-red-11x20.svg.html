@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-gui-base="/gui/" data-cision-url="/api/cision" prefix="og: http://ogp.me/ns#">
+<head><title>
+	Page not found — Sandvik Group
+</title><meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"3b223b72e1","applicationID":"12155998","transactionName":"NQRbZBdVDRZRUE1QVgxOeGM1GxUMVURKFkkDBlxDSloMEVZcTFddTQ9WRANbFgtUHVhKSRo=","queueTime":0,"applicationTime":1401,"agent":"","atts":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');
+	</script>
+	
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-NWP29B');
+	</script>
+
+<link rel="stylesheet" type="text/css" href="/gui/_dist/css/main.min.86c2ce26c22f0ea4edc17aa5fcdcbf91.css" />
+<link href="/gui/i/favicon.ico" rel="shortcut icon" type="image/ico" /><link href="http://www.home.sandvik/en/page-not-found/" rel="canonical" /><meta content="http://www.home.sandvik/en/page-not-found/" property="og:url" /><meta content="article" property="og:type" /><meta content="Page not found — Sandvik Group" property="og:title" /><meta content="This page you are trying to reach doesn&#39;t seem to exist. This is probably a result of a bad or outdated link. We apologize for any inconvenience." property="og:description" /><meta content="http://www.home.sandvik/gui/i/logo-fb-sharing.png" property="og:image" /><meta name="description" content="This page you are trying to reach doesn&#39;t seem to exist. This is probably a result of a bad or outdated link. We apologize for any inconvenience." /></head>
+<body id="four-oh-four" class="layout-4" data-ga-category="" data-ga-label="">
+	
+	
+	<noscript>
+		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NWP29B" title="Google Tag Manager iframe" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+	</noscript>
+
+
+	
+
+	<!--[if lt IE 8]><div id="body" class="lt-ie10 lt-ie9 lt-ie8"><![endif]-->
+	<!--[if IE 8]><div id="body" class="ie8 lt-ie10 lt-ie9"><![endif]-->
+	<!--[if IE 9]><div id="body" class="ie9 lt-ie10"><![endif]-->
+	<!--[if !IE]> --><div id="body"><!-- <![endif]-->
+		
+
+		<div class="skip">
+			<a href="#content-primary">Jump to content</a>
+		</div>
+
+		
+			<div>
+	
+
+<div class="group header" role="banner">
+	<div class="group-inner">
+		<div class="logo-and-nav-main">
+			<a href="/en/" title="Go to the website start page" class="logo">
+				<img src="/gui/i/logo.svg" alt="Sandvik Group" />
+			</a>
+			
+		<div class="nav-main" role="navigation" data-fetch-children-url="/api/navigation/">
+			<ul>
+	
+				<li><a href="/en/">Home</a></li>
+	
+				<li data-page-id="3212:en"><a href="/en/products/">Products</a></li>
+	
+				<li data-page-id="3272:en" data-has-children=""><a href="/en/news-and-media/">News &amp; media</a></li>
+	
+				<li data-page-id="5852:en" data-has-children=""><a href="/en/investors/">Investors</a></li>
+	
+				<li data-page-id="6850:en" data-has-children=""><a href="/en/careers/">Careers</a></li>
+	
+				<li data-page-id="41523:en" data-has-children=""><a href="/en/about-us/">About us</a></li>
+	
+				<li data-page-id="9996:en"><a href="/en/contact/">Contact</a></li>
+	
+			</ul>
+		</div>
+	
+		</div>
+
+		<div class="language">
+			
+				<p>
+					You are visiting:
+					<strong>Sandvik Group</strong>
+				</p>
+			
+			
+				<a class="change-language-link" href="/en/change-country-and-language/">
+					<img src="/gui/i/flags/24/gbus.png" alt="United States" /><span class="structural">:</span> Change country/language
+				</a>
+			
+		</div>
+		
+			<form class="search" id="search-form" role="search" action="/en/search/" data-querycompletion-url="/api/autocomplete/">
+				<label class="structural" for="search">Search</label>
+				<input type="search" id="search" name="q" placeholder="Search" class="search-field" />
+				<input type="submit" value="Search" class="search-submit" />
+			</form>
+		
+	</div>
+</div>
+
+</div>
+		
+		
+		
+
+		
+
+		
+			<div id="main" class="cf group">
+				
+					<div class="group-inner">
+						<div id="content">
+							
+	<div id="content-primary" role="main">
+		<h1 class="heading-type-3"><span>404</span>The page could not be found</h1>
+		<div class="article text">
+			<div class="article-inner">
+				<div class="article-inner-inner">
+					<div class="intro">
+	<p>This page you are trying to reach doesn't seem to exist. This is probably a result of a bad or outdated link. We apologize for any inconvenience.</p>
+</div>
+					<div>
+	<h2>What you can do</h2>
+
+<ul>
+<li>Check the address for proper spelling. If it looks misspelled you can try to correct it.</li>
+
+<li>Use the search function on this page or via the search page.</li>
+
+<li>Try navigating from "Home" or any of the links in the navigation above.</li>
+
+<li>View the sitemap to get an overview of this website.</li>
+</ul>
+</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid">
+			<div data-column-span="10">
+				
+
+<form class="on-page-search" action="/en/page-not-found/" data-querycompletion-url="/api/autocomplete/">
+	<div class="grid">
+		<div data-column-span="9">
+			<label class="structural" for="text">Search</label>
+			<input type="search" id="text" name="q" value="arrow down red 11x20.svg" />
+		</div>
+		<div data-column-span="3">
+			<button class="button button-style-2 button-color-2 button-big" type="submit"><span>Search</span></button>
+		</div>
+	</div>
+</form>
+				
+
+<div class="search-results">
+	<h2 class="article-heading-h1">113 hits</h2>
+	<p class="sub-heading"><strong>113</strong> hits on <strong>”<span class="search-phrase">arrow down red 11x20.svg</span>”</strong> in <strong>entire website</strong></p>
+
+	
+
+	
+
+	<div class="search-result">
+	
+	<h3><a href="http://www.home.sandvik/en/news-and-media/news/2002/12/sandvik-enters-global-cooperation-with-red-cross/">Sandvik enters global cooperation with <strong>Red</strong> Cross</a></h3>
+	the Swedish <strong>Red</strong> Cross covering global cooperation for three years.
+The agreement is unique and comprises: Purchase of services from the <strong>Red</strong> Cross for training ... employees are available to assist the International Federation of <strong>Red</strong> Cross and <strong>Red</strong> Crescent Societies in the event of catastrophe situations. Sandvik
+
+
+
+
+		<div class="breadcrumbs " role="navigation">
+			<strong>You are here:</strong>
+	<a href="/en/news-and-media/">News &amp; media</a> <a href="/en/news-and-media/news/2002/12/sandvik-enters-global-cooperation-with-red-cross/">Sandvik enters global cooperation with Red Cross</a>
+		</div>
+	
+</div><div class="search-result search-result-image">
+	
+
+
+	<div class="grid text">
+		<div data-column-span="8">
+			<h3><a href="http://www.home.sandvik/en/news-and-media/news/2017/01/inserts-analyzed-down-to-the-atom/">Inserts, analyzed <strong>down</strong> to the atom</a></h3>
+			&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/0QrynzJ_lZ4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+In 1942, Wilhelm Haglund was entrusted with the task of investing time and money in a production unit for cemented-carbide
+		</div>
+		<div data-column-span="4">
+			<img alt="" src="/filtered/51498/rszww300-90/how-carbide-inserts-are-made-by-sandvik-coromant-350x194-799286938-rszww300-90.jpg" />
+		</div>
+	</div>
+
+
+
+		<div class="breadcrumbs " role="navigation">
+			<strong>You are here:</strong>
+	<a href="/en/news-and-media/">News &amp; media</a> <a href="/en/news-and-media/news/2017/01/inserts-analyzed-down-to-the-atom/">Inserts, analyzed down to the atom</a>
+		</div>
+	
+</div><div class="search-result">
+	
+	<h3><a href="http://www.home.sandvik/en/careers/sandvik-blog/archive/2015/04/up-in-the-air-or-down-in-the-tunnel/">Up in the air or <strong>down</strong> in the tunnel?</a></h3>
+	Tonight I am ... flying to Germany. A new week already started for me. There are ups and <strong>downs</strong> when you are travelling quite often. Especially when you start the week on
+
+
+
+
+		<div class="breadcrumbs " role="navigation">
+			<strong>You are here:</strong>
+	<a href="/en/careers/">Careers</a> <a href="/en/careers/sandvik-blog/">Sandvik blog</a> <a href="/en/careers/sandvik-blog/archive/">Archive</a> <a href="/en/careers/sandvik-blog/archive/2015/04/up-in-the-air-or-down-in-the-tunnel/">Up in the air or down in the tunnel?</a>
+		</div>
+	
+</div><div class="search-result">
+	
+	<h3><a href="http://www.home.sandvik/en/news-and-media/news/2014/12/sandvik-materials-technology-is-closing-down-its-die-cutting-business-in-china/">Sandvik Materials Technology is closing <strong>down</strong> its Die Cutting business in China</a></h3>
+	Sandvik ... Materials Technology (SMT) is closing <strong>down</strong> its Die Cutting business in Qingdao, China.
+SMT is proposing to also close <strong>down</strong> the Die Cutting sales office in Halesowen ... Sandvik AB, tel +46 8 456 12 37. Sandvik Materials Technology is closing <strong>down</strong> its Die Cutting business in Chinathe (PDF)
+
+
+
+
+		<div class="breadcrumbs " role="navigation">
+			<strong>You are here:</strong>
+	<a href="/en/news-and-media/">News &amp; media</a> <a href="/en/news-and-media/news/2014/12/sandvik-materials-technology-is-closing-down-its-die-cutting-business-in-china/">Sandvik Materials Technology is closing down its Die Cutting business in China</a>
+		</div>
+	
+</div><div class="search-result">
+	
+	<h3><a href="http://www.home.sandvik/en/careers/job-search/jobs/artisan-millwright-351068/">Artisan - Millwright (351068)</a></h3>
+	Artisan - Millwright
+40
+7
+Delmas
+Sandvik seeks: Artisan - Millwright The role To maintain, repair, rewire and rebuild mobile equipment ... testing and underground experience Trade Certificate of Competence (Section 13 <strong>Red</strong> seal or Section 26) English proficiency. Own &amp; Complete Set of tools Minimum
+
+
+
+
+		<div class="breadcrumbs " role="navigation">
+			<strong>You are here:</strong>
+	<a href="/en/careers/">Careers</a> <a href="/en/careers/job-search/">Job search</a> <a href="/en/careers/job-search/jobs/artisan-millwright-351068/">Artisan - Millwright (351068)</a>
+		</div>
+	
+</div><div class="search-result">
+	
+	<h3><a href="http://www.home.sandvik/en/about-this-site/tips-and-help-for-search/">Tips and help for search</a></h3>
+	word sometimes result in a very long list of matching documents. To narrow <strong>down</strong> the list of results you can type more words as your search phrase. You can ... suggested search phrases popping up below the search field. You can use the <strong>arrows</strong> on your keyboard or use your mouse to select a suggested phrase. Refine
+
+
+
+
+		<div class="breadcrumbs " role="navigation">
+			<strong>You are here:</strong>
+	<a href="/en/about-this-site/">About this site</a> <a href="/en/about-this-site/tips-and-help-for-search/">Tips and help for search</a>
+		</div>
+	
+</div><div class="search-result">
+	
+	<h3><a href="http://www.home.sandvik/en/careers/job-search/jobs/warehouse-technician-350797/">Warehouse Technician (350797)</a></h3>
+	Warehouse Technician
+18
+36
+<strong>Red</strong> Lake
+Sandvik Mining &amp; Rock Technology is seeking a Warehouse Technician Location: <strong>Red</strong> Lake, Ontario For over 150 years ... and materials handling. Currently we are seeking a Warehouse Technician in <strong>Red</strong> Lake Ontario who will be responsible for shipments (incoming and outgoing)
+
+
+
+
+		<div class="breadcrumbs " role="navigation">
+			<strong>You are here:</strong>
+	<a href="/en/careers/">Careers</a> <a href="/en/careers/job-search/">Job search</a> <a href="/en/careers/job-search/jobs/warehouse-technician-350797/">Warehouse Technician (350797)</a>
+		</div>
+	
+</div><div class="search-result">
+	
+	<h3><a href="http://www.home.sandvik/en/careers/job-search/jobs/lead-workshop-technician-mechanical-350446/">Lead Workshop Technician (Mechanical) (350446)</a></h3>
+	Lead Workshop Technician (Mechanical)
+18
+14
+Lively, ON
+Sandvik Mining &amp; Rock Technology is seeking Lead Workshop Technician (Mechanical) ... Required Skills and Education Technical diploma in mechanical discipline <strong>Red</strong> Seal Heavy Duty Equipment License Minimum 3-5 years’ related experience with
+
+
+
+
+		<div class="breadcrumbs " role="navigation">
+			<strong>You are here:</strong>
+	<a href="/en/careers/">Careers</a> <a href="/en/careers/job-search/">Job search</a> <a href="/en/careers/job-search/jobs/lead-workshop-technician-mechanical-350446/">Lead Workshop Technician (Mechanical) (350446)</a>
+		</div>
+	
+</div><div class="search-result">
+	
+	<h3><a href="http://www.home.sandvik/en/careers/sandvik-blog/archive/2015/06/sandvik-pals-and-gals-moments/">Sandvik pals and gals moments!</a></h3>
+	Hola Readers! The summers are coming! This sets me in a default mood to get <strong>down</strong> with some fun (Work hard! Play Harder! Right?!?) . In the spirit of the mood ... evening snack!) and celebrating Valentine’s Day in <strong>Red</strong> (Giving a hard time to the ones who didn’t wear <strong>Red</strong>!). These are the little actions that united the
+
+
+
+
+		<div class="breadcrumbs " role="navigation">
+			<strong>You are here:</strong>
+	<a href="/en/careers/">Careers</a> <a href="/en/careers/sandvik-blog/">Sandvik blog</a> <a href="/en/careers/sandvik-blog/archive/">Archive</a> <a href="/en/careers/sandvik-blog/archive/2015/06/sandvik-pals-and-gals-moments/">Sandvik pals and gals moments!</a>
+		</div>
+	
+</div><div class="search-result">
+	
+	<h3><a href="http://www.home.sandvik/en/news-and-media/press-release-archive/2002/">2002</a></h3>
+	Sandvik enters global cooperation with <strong>Red</strong> Cross 2002-12-11 Offer for shares outstanding in Walter extended 2002-12-10 Sandvik secures materials-handling ... Stainless 2002-05-13 Interim Report, first quarter 2002 Invoicing: SEK 11,800 M, <strong>down</strong> 2% Order intake increased from fourth quarter 2001 2002-05-07 Sandvik Aktiebolag&#39;s
+
+
+
+
+		<div class="breadcrumbs " role="navigation">
+			<strong>You are here:</strong>
+	<a href="/en/news-and-media/">News &amp; media</a> <a href="/en/news-and-media/press-release-archive/">Press release archive</a> <a href="/en/news-and-media/press-release-archive/2002/">2002</a>
+		</div>
+	
+</div>
+</div>
+
+				
+			</div>
+		</div>
+	</div>
+
+						</div>
+					</div>
+				
+			</div>
+		
+
+		
+
+		
+		
+		
+
+		
+            
+
+<div class="group footer footer-polygon" role="contentinfo">
+	<div class="group-inner">
+		<h2 class="structural">Site footer</h2>
+		<div class="footer-left">
+			<img src="/gui/i/logo.svg" alt="Sandvik Group" />
+			<div class="statement">
+	<p><strong>Sandvik</strong> is an engineering group in mining and rock excavation, metal-cutting and materials technology.</p>
+</div>
+			<div class="copyright">
+	<p>Copyright © Sandvik AB; (publ)<br />Box 510, SE-101 30 Stockholm, Sweden<br />Phone: +46 8 456 11 00</p>
+</div>
+		</div>
+		<div class="footer-right">
+			<div class="nav-supp" role="navigation">
+				<ul><li><a href="/en/contact/">Contact</a></li><li><a href="/en/about-this-site/">About this site</a></li></ul>
+			</div>
+
+			<div class="nav-social">
+				<h3 class="structural">Find us at:</h3>
+				<ul>
+					<li class="nav-social-facebook"><span><a href="https://www.facebook.com/sandvik">https://www.facebook.com/sandvik</a></span></li>
+					<li class="nav-social-twitter"><span><a href="https://twitter.com/SandvikGroup">https://twitter.com/SandvikGroup</a></span></li>
+					<li class="nav-social-instagram"><span><a href="http://instagram.com/sandvikgroup">http://instagram.com/sandvikgroup</a></span></li>
+					<li class="nav-social-youtube"><span><a href="http://www.youtube.com/user/sandvik">http://www.youtube.com/user/sandvik</a></span></li>
+					<li class="nav-social-linkedin"><span><a href="https://www.linkedin.com/company/sandvik">https://www.linkedin.com/company/sandvik</a></span></li>
+					
+				</ul>
+			</div>
+			<h3 class="structural">More Sandvik</h3>
+			<div>
+	
+
+<a href="/en/other-sandvik-websites/" class="change-website">
+	Other Sandvik websites
+</a>
+</div>
+		</div>
+	</div>
+</div>
+
+			<div></div>
+		
+
+		
+	
+	</div>
+	<script type="text/javascript" src="/gui/_dist/js/group.min.2fb3b41b542d450ac176fb577f51182c.js"></script>
+<script type="text/javascript" src="https://dl.episerver.net/12.4.2/epi-util/native.history.js"></script>
+<script type="text/javascript" src="https://dl.episerver.net/12.4.2/epi-util/find.js"></script>
+<script type="text/javascript">
+if(FindApi){var api = new FindApi();api.setApplicationUrl('/');api.setServiceApiBaseUrl('/find_v2/');api.processEventFromCurrentUri();api.bindWindowEvents();api.bindAClickEvent();api.sendBufferedEvents();}
+</script>
+
+	
+
+<script>
+	(function () {
+		'use strict';
+
+		netr.string.addTranslations('en', {
+			header: {
+				menuToggleText: 'Menu',
+				searchToggleText: 'Show search form'
+			},
+			article: {
+				print_this_page: 'Print this page'
+			},
+			dialog: {
+				close: 'Close',
+				errorMessage: '<p>An error has occured. Please try again.</p>'
+			},
+			transfer: {
+				youAreBeingTransfered: 'You are being transferred to another of Sandvik\'s websites ',
+				youAreBeingTransferedOld: 'You are being transferred to the <span>{0}</span> website '
+			},
+			datepicker: {
+				closeText: 'Done',
+				prevText: 'Prev',
+				nextText: 'Next',
+				currentText: 'Today',
+				weekHeader: 'W',
+				monthNames: [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ],
+				monthNamesShort: [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ],
+				dayNames: [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ],
+				dayNamesShort: [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ],
+				dayNamesMin: [ 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa' ],
+				firstDay: 0,
+				isRTL: false,
+				dateFormat: 'm/d/yy',
+				showMonthAfterYear: false,
+				yearSuffix: ''
+			},
+			tables: {
+				showTable: 'Show table'
+			},
+			salesOffices: {
+				viewLargerMap: 'View a larger map',
+				viewLargerMapTitle: 'Larger map'
+			},
+			barConverter: {
+				requiredMessage: ''
+			},
+			pressureCalculations: {
+				change: ''
+			}
+		});
+	}());
+
+</script>
+
+	
+</body>
+</html>
