@@ -5,7 +5,7 @@ block content
     .group-inner
         .logo-and-nav-main
           a.logo(href='../index.html', title='Gå till webbplatsens startsida')
-            img(src='../../gui/i/logo.svg', alt='Sandvik Group')
+            img(src='images/i/logo.svg', alt='Sandvik Group')
           | &#x9;&#x9;&#x9;
           | &#x9;&#x9;
           .nav-main(role='navigation', data-fetch-children-url='/api/navigation/')
@@ -20,14 +20,6 @@ block content
               | &#x9;&#x9;&#x9;&#x9;
               li(data-page-id='3272:sv', data-has-children='')
                 a(href='../nyheter-och-media/index.html') Nyheter &amp; media
-              | &#x9;
-              | &#x9;&#x9;&#x9;&#x9;
-              li(data-page-id='5852:sv', data-has-children='')
-                a(href='../investerare/index.html') Investerare
-              | &#x9;
-              | &#x9;&#x9;&#x9;&#x9;
-              li(data-page-id='6850:sv', data-has-children='')
-                a(href='../karriar/index.html') Karri&auml;r
               | &#x9;
               | &#x9;&#x9;&#x9;&#x9;
               li(data-page-id='41523:sv', data-has-children='')
@@ -45,22 +37,10 @@ block content
           | &#x9;&#x9;&#x9;
           | &#x9;&#x9;&#x9;&#x9;
           a.change-language-link(href='../byt-land-och-sprak/index.html')
-            img(src='../../gui/i/flags/24/se.png', alt='Sweden')
+            img(src='images/i/flags/24/se.png', alt='Sweden')
             span.structural :
             |  Byt land/spr&aring;k
         | &#x9;&#x9;
-        | &#x9;&#x9;&#x9;
-        form#search-form.search(role='search', action='../sok/index.html', data-querycompletion-url='/api/autocomplete/')
-          label.structural(for='search') S&ouml;k
-          | &#x9;&#x9;&#x9;&#x9;
-          input#search.search-field(type='search', name='q', placeholder='Sök')
-          | &#x9;&#x9;&#x9;&#x9;
-          input.search-submit(type='submit', value='Sök')
-    | &#x9;&#x9;
-    | &#x9;&#x9;
-    | &#x9;&#x9;
-    | &#x9;&#x9;
-    | &#x9;&#x9;
     | &#x9;&#x9;&#x9;
     #main.cf.group
       .group-inner
@@ -873,7 +853,7 @@ block content
         h2.structural Sidfot
         | &#x9;&#x9;
         .footer-left
-          img(src='../../gui/i/logo.svg', alt='Sandvik Group')
+          img(src='images/i/logo.svg', alt='Sandvik Group')
           | &#x9;&#x9;&#x9;
           .statement
             p
@@ -901,17 +881,7 @@ block content
                   a(href='https://www.facebook.com/sandvikkarriar') https://www.facebook.com/sandvikkarriar
               | &#x9;&#x9;&#x9;&#x9;&#x9;
               li.nav-social-twitter
-                span
-                  a(href='https://twitter.com/Sandviksverige') https://twitter.com/Sandviksverige
-              | &#x9;&#x9;&#x9;&#x9;&#x9;
-              li.nav-social-instagram
-                span
-                  a(href='https://instagram.com/sandvikgroup/') https://instagram.com/sandvikgroup/
-              | &#x9;&#x9;&#x9;&#x9;&#x9;
-              li.nav-social-youtube
-                span
-                  a(href='https://www.youtube.com/user/sandvik') https://www.youtube.com/user/sandvik
-              | &#x9;&#x9;&#x9;&#x9;&#x9;
+
               li.nav-social-linkedin
                 span
                   a(href='https://www.linkedin.com/company/sandvik') https://www.linkedin.com/company/sandvik
@@ -919,5 +889,3 @@ block content
           h3.structural Mera Sandvik
           | &#x9;&#x9;&#x9;
           div
-            a.change-website(href='../andra-sandvik-webbplatser/index.html')
-              | Andra Sandvik-webbplatser
