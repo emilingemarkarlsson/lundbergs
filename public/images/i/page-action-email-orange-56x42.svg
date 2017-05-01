@@ -4,10 +4,10 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="56px" height="42px" viewBox="0 0 56 42" enable-background="new 0 0 56 42" xml:space="preserve">
 <g>
-	<path fill="#FF6A00" d="M53.285,2.696L27.622,39.215L17.26,29.402l26.058-18.572L42.275,9.13L12.324,24.773l-9.728-8.236
+	<path fill="#1db954" d="M53.285,2.696L27.622,39.215L17.26,29.402l26.058-18.572L42.275,9.13L12.324,24.773l-9.728-8.236
 		L53.285,2.696 M55.699,1L0.5,16.073l11.691,9.898l30.547-15.955L15.69,29.293l12.084,11.443L55.699,1L55.699,1z"/>
 </g>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FF6A00" d="M12,26h1v9h-1V26z"/>
-<line fill="none" stroke="#FF6A00" stroke-miterlimit="10" x1="17" y1="29" x2="13" y2="33"/>
-<line fill="none" stroke="#FF6A00" stroke-miterlimit="10" x1="13" y1="34" x2="19" y2="31"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#1db954" d="M12,26h1v9h-1V26z"/>
+<line fill="none" stroke="#1db954" stroke-miterlimit="10" x1="17" y1="29" x2="13" y2="33"/>
+<line fill="none" stroke="#1db954" stroke-miterlimit="10" x1="13" y1="34" x2="19" y2="31"/>
 </svg>

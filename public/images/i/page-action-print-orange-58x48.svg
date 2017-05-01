@@ -4,19 +4,19 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="58px" height="48px" viewBox="0 0 58 48" enable-background="new 0 0 58 48" xml:space="preserve">
 <g>
-	<path fill="#FF6A00" d="M57,15v21h-8v-9v-1h-1H10H9v1v9H1V15H57 M58,14H0v23h10V27h38v10h10V14L58,14z"/>
+	<path fill="#1db954" d="M57,15v21h-8v-9v-1h-1H10H9v1v9H1V15H57 M58,14H0v23h10V27h38v10h10V14L58,14z"/>
 </g>
-<rect x="11.5" y="28.5" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF6A00" stroke-miterlimit="10" width="35" height="18"/>
-<rect x="11.5" y="1.5" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF6A00" stroke-miterlimit="10" width="35" height="11"/>
-<line fill="none" stroke="#FF6A00" stroke-miterlimit="10" x1="17" y1="34.5" x2="41" y2="34.5"/>
-<line fill="none" stroke="#FF6A00" stroke-miterlimit="10" x1="17" y1="37.5" x2="41" y2="37.5"/>
-<line fill="none" stroke="#FF6A00" stroke-miterlimit="10" x1="17" y1="40.5" x2="41" y2="40.5"/>
+<rect x="11.5" y="28.5" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#1db954" stroke-miterlimit="10" width="35" height="18"/>
+<rect x="11.5" y="1.5" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#1db954" stroke-miterlimit="10" width="35" height="11"/>
+<line fill="none" stroke="#1db954" stroke-miterlimit="10" x1="17" y1="34.5" x2="41" y2="34.5"/>
+<line fill="none" stroke="#1db954" stroke-miterlimit="10" x1="17" y1="37.5" x2="41" y2="37.5"/>
+<line fill="none" stroke="#1db954" stroke-miterlimit="10" x1="17" y1="40.5" x2="41" y2="40.5"/>
 <g>
-	<path fill="#FF6A00" d="M11.5,18c0.827,0,1.5,0.673,1.5,1.5S12.327,21,11.5,21S10,20.327,10,19.5S10.673,18,11.5,18 M11.5,17
+	<path fill="#1db954" d="M11.5,18c0.827,0,1.5,0.673,1.5,1.5S12.327,21,11.5,21S10,20.327,10,19.5S10.673,18,11.5,18 M11.5,17
 		C10.119,17,9,18.119,9,19.5s1.119,2.5,2.5,2.5s2.5-1.119,2.5-2.5S12.881,17,11.5,17L11.5,17z"/>
 </g>
 <g>
-	<path fill="#FF6A00" d="M17.5,18c0.276,0,0.5,0.224,0.5,0.5S17.776,19,17.5,19S17,18.776,17,18.5S17.224,18,17.5,18 M17.5,17
+	<path fill="#1db954" d="M17.5,18c0.276,0,0.5,0.224,0.5,0.5S17.776,19,17.5,19S17,18.776,17,18.5S17.224,18,17.5,18 M17.5,17
 		c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5s1.5-0.671,1.5-1.5S18.329,17,17.5,17L17.5,17z"/>
 </g>
 </svg>
