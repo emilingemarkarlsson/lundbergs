@@ -1,111 +1,320 @@
 extends ../layout
 
 block content
-  .page-header
-    h3 Profile Information
-
-  form.form-horizontal(action='/account/profile', method='POST')
-    input(type='hidden', name='_csrf', value=_csrf)
-    .form-group
-      label.col-sm-3.control-label(for='email') Email
-      .col-sm-7
-        input.form-control(type='email', name='email', id='email', value=user.email)
-    .form-group
-      label.col-sm-3.control-label(for='name') Name
-      .col-sm-7
-        input.form-control(type='text', name='name', id='name', value=user.profile.name)
-    .form-group
-      label.col-sm-3.control-label Gender
-      .col-sm-6
-        label.radio.col-sm-3
-          input(type='radio', checked=user.profile.gender=='male', name='gender', value='male', data-toggle='radio')
-          span Male
-        label.radio.col-sm-3
-          input(type='radio', checked=user.profile.gender=='female', name='gender', value='female', data-toggle='radio')
-          span Female
-        label.radio.col-sm-3
-          input(type='radio', checked=user.profile.gender=='other', name='gender', value='other', data-toggle='radio')
-          span Other
-    .form-group
-      label.col-sm-3.control-label(for='location') Location
-      .col-sm-7
-        input.form-control(type='text', name='location', id='location', value=user.profile.location)
-    .form-group
-      label.col-sm-3.control-label(for='website') Website
-      .col-sm-7
-        input.form-control(type='text', name='website', id='website', value=user.profile.website)
-    .form-group
-      label.col-sm-3.control-label Gravatar
-      .col-sm-4
-        img(src=user.gravatar(), class='profile', width='100', height='100')
-    .form-group
-      .col-sm-offset-3.col-sm-4
-        button.btn.btn.btn-primary(type='submit')
-          i.fa.fa-pencil
-          | Update Profile
-
-  .page-header
-    h3 Change Password
-
-  form.form-horizontal(action='/account/password', method='POST')
-    input(type='hidden', name='_csrf', value=_csrf)
-    .form-group
-      label.col-sm-3.control-label(for='password') New Password
-      .col-sm-7
-        input.form-control(type='password', name='password', id='password')
-    .form-group
-      label.col-sm-3.control-label(for='confirmPassword') Confirm Password
-      .col-sm-7
-        input.form-control(type='password', name='confirmPassword', id='confirmPassword')
-    .form-group
-      .col-sm-offset-3.col-sm-4
-        button.btn.btn-primary(type='submit')
-          i.fa.fa-lock
-          | Change Password
-
-  .page-header
-    h3 Delete Account
-
-  form.form-horizontal(action='/account/delete', method='POST')
-    .form-group
-      p.col-sm-offset-3.col-sm-4 You can delete your account, but keep in mind this action is irreversible.
-      input(type='hidden', name='_csrf', value=_csrf)
-      .col-sm-offset-3.col-sm-4
-        button.btn.btn-danger(type='submit')
-          i.fa.fa-trash
-          | Delete my account
-
-  .page-header
-    h3 Linked Accounts
-  .form-horizontal
-    .form-group
-      .col-sm-offset-3.col-sm-4
-        if user.instagram
-          p: a.text-danger(href='/account/unlink/instagram') Unlink your Instagram account
-        else
-          p: a(href='/auth/instagram') Link your Instagram account
-      .col-sm-offset-3.col-sm-4
-        if user.google
-          p: a.text-danger(href='/account/unlink/google') Unlink your Google account
-        else
-          p: a(href='/auth/google') Link your Google account
-      .col-sm-offset-3.col-sm-4
-        if user.facebook
-          p: a.text-danger(href='/account/unlink/facebook') Unlink your Facebook account
-        else
-          p: a(href='/auth/facebook') Link your Facebook account
-      .col-sm-offset-3.col-sm-4
-        if user.twitter
-          p: a.text-danger(href='/account/unlink/twitter') Unlink your Twitter account
-        else
-          p: a(href='/auth/twitter') Link your Twitter account
-      .col-sm-offset-3.col-sm-4
-        if user.github
-          p: a.text-danger(href='/account/unlink/github') Unlink your GitHub account
-        else
-          p: a(href='/auth/github') Link your GitHub account
-      .col-sm-offset-3.col-sm-4
-        if user.linkedin
-          p: a.text-danger(href='/account/unlink/linkedin') Unlink your LinkedIn account
-        else
-          p: a(href='/auth/linkedin') Link your LinkedIn account
+  .group.header(role='banner')
+    .group-inner
+        .logo-and-nav-main
+          a.logo(href='../../index.html', title='Gå till webbplatsens startsida')
+            img(src='../../../gui/i/logo.svg', alt='Sandvik Group')
+          | &#x9;&#x9;&#x9;
+          | &#x9;&#x9;
+          .nav-main(role='navigation', data-fetch-children-url='/api/navigation/')
+            ul
+              li
+                a(href='../../index.html') Hem
+              | &#x9;
+              | &#x9;&#x9;&#x9;&#x9;
+              li(data-page-id='3212:sv')
+                a(href='../../produkter/index.html') Produkter
+              | &#x9;
+              | &#x9;&#x9;&#x9;&#x9;
+              li(data-page-id='3272:sv', data-has-children='')
+                a(href='../../nyheter-och-media/index.html') Nyheter &amp; media
+              | &#x9;
+              | &#x9;&#x9;&#x9;&#x9;
+              li(data-page-id='5852:sv', data-has-children='')
+                a(href='../../investerare/index.html') Investerare
+              | &#x9;
+              | &#x9;&#x9;&#x9;&#x9;
+              li(data-page-id='6850:sv', data-has-children='')
+                a(href='../../karriar/index.html') Karri&auml;r
+              | &#x9;
+              | &#x9;&#x9;&#x9;&#x9;
+              li.selected(data-page-id='41523:sv', data-has-children='', data-selected='')
+                a(href='index.html') Om oss
+              | &#x9;
+              | &#x9;&#x9;&#x9;&#x9;
+              li(data-page-id='28555:sv')
+                a(href='../../kontakt/index.html') Kontakt
+        | &#x9;&#x9;
+        .language
+          p
+            | Du bes&ouml;ker:
+            strong Sandvik Group
+          | &#x9;&#x9;&#x9;
+          | &#x9;&#x9;&#x9;
+          | &#x9;&#x9;&#x9;&#x9;
+          a.change-language-link(href='../../byt-land-och-sprak/index.html')
+            img(src='../../../gui/i/flags/24/se.png', alt='Sweden')
+            span.structural :
+            |  Byt land/spr&aring;k
+        | &#x9;&#x9;
+        | &#x9;&#x9;&#x9;
+        form#search-form.search(role='search', action='../../sok/index.html', data-querycompletion-url='/api/autocomplete/')
+          label.structural(for='search') S&ouml;k
+          | &#x9;&#x9;&#x9;&#x9;
+          input#search.search-field(type='search', name='q', placeholder='Sök')
+          | &#x9;&#x9;&#x9;&#x9;
+          input.search-submit(type='submit', value='Sök')
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;&#x9;
+    #main.cf.group
+      .group-inner
+        #content
+          .content-1
+            .nav-sub(role='navigation')
+              h2.structural Undernavigering f&ouml;r
+              | &#x9;
+              | &#x9;&#x9;
+              ul
+                li(data-page-id='41523:sv', data-has-children='', data-expanded='')
+                  a(href='index.html')
+                    strong Om oss
+                  | &#x9;
+                  | &#x9;&#x9;
+                  ul
+                    li(data-page-id='6407:sv', data-has-children='', data-selected='', data-expanded='')
+                      a(href='index.html')
+                        strong V&aring;rt f&ouml;retag
+                      | &#x9;
+                      | &#x9;&#x9;
+                      ul
+                        li(data-page-id='6411:sv')
+                          a(href='vision-och-strategi/index.html')
+                            span Vision och strategi
+                        | &#x9;
+                        | &#x9;&#x9;&#x9;
+                        li(data-page-id='6412:sv')
+                          a(href='affarsomraden/index.html')
+                            span Aff&auml;rsomr&aring;den
+                        | &#x9;
+                        | &#x9;&#x9;&#x9;
+                        li(data-page-id='6413:sv')
+                          a(href='nyckeltal/index.html')
+                            span Nyckeltal
+                        | &#x9;
+                        | &#x9;&#x9;&#x9;
+                        li(data-page-id='6620:sv')
+                          a(href='koncernledning2/index.html')
+                            span Koncernledning
+                        | &#x9;
+                        | &#x9;&#x9;&#x9;
+                        li(data-page-id='37410:sv')
+                          a(href='bolagsstyrning2/index.html')
+                            span Bolagsstyrning
+                        | &#x9;
+                        | &#x9;&#x9;&#x9;
+                        li(data-page-id='6414:sv', data-has-children='')
+                          a(href='historia/index.html')
+                            span Historia
+                        | &#x9;
+                        | &#x9;&#x9;&#x9;
+                        li(data-page-id='6432:sv', data-has-children='')
+                          a(href='foretagspresentationer/index.html')
+                            span F&ouml;retagspresentationer
+                        | &#x9;
+                        | &#x9;&#x9;&#x9;
+                        li(data-page-id='42983:sv', data-has-children='')
+                          a(href='innovationspriser/index.html')
+                            span Innovationspriser
+                        | &#x9;
+                        | &#x9;&#x9;&#x9;
+                        li(data-page-id='6445:sv', data-has-children='')
+                          a(href='sponsring/index.html')
+                            span Sponsring
+                    | &#x9;
+                    | &#x9;&#x9;&#x9;
+                    li(data-page-id='39927:sv', data-has-children='')
+                      a(href='../industrierbjudanden/index.html')
+                        span Industrierbjudanden
+                    | &#x9;
+                    | &#x9;&#x9;&#x9;
+                    li(data-page-id='6641:sv', data-has-children='')
+                      a(href='../hallbara-affarer/index.html')
+                        span H&aring;llbara aff&auml;rer
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+          .content-2
+            .breadcrumbs(role='navigation')
+              strong Du &auml;r h&auml;r:
+              | &#x9;
+              a(href='index.html') Om oss
+              |  
+              span.current-page V&aring;rt f&ouml;retag
+            | &#x9;
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            #content-primary.pdf-content-wrapper(role='main')
+              .article.text
+                h1 Sandvik i korthet
+                | &#x9;&#x9;
+                .article-inner
+                  .intro-image
+                    .intro-image-inner
+                      img(alt='', src='../../../filtered/51706/rszww880-90/tube-mill-880x480-1371113353-rszww880-90.jpg')
+                  | &#x9;&#x9;&#x9;
+                  .article-inner-inner
+                    .intro
+                      p
+                        span
+                          | Sandvik &auml;r en h&ouml;gteknologisk och global industrikoncern med omkring 43 000 anst&auml;llda med ett starkt fokus att f&ouml;rb&auml;ttra kunders produktivitet, l&ouml;nsamhet och s&auml;kerhet.
+                    | &#x9;&#x9;&#x9;&#x9;
+                    div
+                      p
+                        | V&aring;r verksamhet &auml;r baserad p&aring; unik kompetens inom materialteknik, omfattande kunskap om industriella processer och n&auml;ra samarbete med kunder. Detta har, tillsammans med kontinuerliga investeringar inom forskning och utveckling (FoU), gett oss en v&auml;rldsledande position inom f&ouml;ljande huvudomr&aring;den:
+                      ul
+                        li
+                          span Verktyg och verktygssystem f&ouml;r sk&auml;rande metallbearbetning
+                        li
+                          span
+                            | Maskiner, verktyg, service och tekniska l&ouml;sningar f&ouml;r gruv- och anl&auml;ggningsindustrin
+                        li
+                          span
+                            | Avancerade rostfria st&aring;l och speciallegeringar samt produkter f&ouml;r industriell v&auml;rmning
+                      h2.cf Aff&auml;rsomr&aring;den
+                      p
+                        | Sandvik bedriver sin verksamhet inom tre aff&auml;rsomr&aring;den som ansvarar f&ouml;r forskning och utveckling (FoU), tillverkning och f&ouml;rs&auml;ljning av sina respektive produkter och tj&auml;nster. 
+                        a(href='affarsomraden/index.html') L&auml;s mer om Sandviks aff&auml;rsomr&aring;den
+                      table
+                        caption Kortfakta om Sandvik-koncernen*
+                        tbody
+                          tr
+                            td
+                              strong Oms&auml;ttning
+                            td 82 miljarder SEK (cirka)
+                          tr
+                            td
+                              strong Antal anst&auml;llda
+                            td 43 000 (cirka)
+                          tr
+                            td
+                              strong Styrelseordf&ouml;rande
+                            td Johan Molin
+                          tr
+                            td
+                              strong VD och koncernchef
+                            td Bj&ouml;rn Rosengren
+                          tr
+                            td
+                              strong Investeringar i FoU
+                            td 3,5 miljarder SEK (cirka)
+                          tr
+                            td
+                              strong Antal aktiva patent
+                            td 7 900 (cirka)
+                          tr
+                            td
+                              strong Huvudkontor
+                            td Stockholm, Sverige
+                          tr
+                            td
+                              strong Grundat &aring;r
+                            td 1862
+                      p.table-notes * Siffrorna g&auml;ller totalt f&ouml;r koncernen 2016 exkl. Mining Systems
+              | &#x9;
+              | &#x9;&#x9;
+              .grid
+                .teaser(data-column-span='12')
+                  .teaser-heading
+                    h2
+                      | Nyckeltal f&ouml;r Sandvik
+                  .teaser-content.text
+                    div
+                      p
+                        a(href='nyckeltal/index.html') Nyckeltal f&ouml;r Sandvik-koncernen
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;&#x9;
+    .group.article-info
+      .group-inner
+        .content-2
+          .page-actions
+            .page-actions-contact
+              h2 Vill du veta mer?
+              | &#x9;
+              ul
+                li.page-action-email-us
+                  a.open-in-dialog.open-email-dialog(href='../../contact/contact-form/index-sender=6407.html#email-form') Mejla oss
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            .page-actions-share
+              h2 Dela med andra
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              ul
+                li.page-action-twitter
+                  a(target='_blank', href='https://twitter.com/intent/tweet?url=http://www.home.sandvik/se/om-oss/vart-foretag/&text=V%c3%a5rt+f%c3%b6retag&hashtags=sandvik') Twitter
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li.page-action-facebook
+                  a(target='_blank', href='https://www.facebook.com/sharer/sharer.php?u=http://www.home.sandvik/se/om-oss/vart-foretag/') Facebook
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li.page-action-linkedin
+                  a(target='_blank', href='https://www.linkedin.com/shareArticle?url=http://www.home.sandvik/se/om-oss/vart-foretag/&title=V%c3%a5rt+f%c3%b6retag&summary=Sandvik+%c3%a4r+en+h%c3%b6gteknologisk+och+global+industrikoncern+med+omkring+43+000+anst%c3%a4llda+med+ett+starkt+fokus+att+f%c3%b6rb%c3%a4ttra+kunders+produktivitet%2c+l%c3%b6nsamhet+och+s%c3%a4kerhet.&mini=true') LinkedIn
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li.page-action-email
+                  a(target='_blank', href='mailto:?subject=Vårt företag&body=http://www.home.sandvik/se/om-oss/vart-foretag/') Epost
+          | &#x9;&#x9;&#x9;&#x9;
+          | &#x9;&#x9;&#x9;&#x9;&#x9;
+          .send-feedback
+            a.send-feedback-link(href='index-show=send-feedback.html#send-feedback') Skicka kommentar p&aring; denna sida
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    |             
+    .group.footer.footer-polygon(role='contentinfo')
+      .group-inner
+        h2.structural Sidfot
+        | &#x9;&#x9;
+        .footer-left
+          img(src='../../../gui/i/logo.svg', alt='Sandvik Group')
+          | &#x9;&#x9;&#x9;
+          .statement
+            p
+              | Sandvik &auml;r en verkstadskoncern inom gruv- och bergbrytning, metallbearbetning och materialteknik.
+          | &#x9;&#x9;&#x9;
+          .copyright
+            p Copyright &copy; Sandvik AB; (publ)
+            p Box 510, 101 30 Stockholm, Sverige
+            p Tel 08 456 11 00
+        | &#x9;&#x9;
+        .footer-right
+          .nav-supp(role='navigation')
+            ul
+              li
+                a(href='../../kontakt/index.html') Kontakt
+              li
+                a(href='../../om-webbplatsen/index.html') Om webbplatsen
+          | &#x9;&#x9;&#x9;
+          .nav-social
+            h3.structural Hittas oss p&aring;:
+            | &#x9;&#x9;&#x9;&#x9;
+            ul
+              li.nav-social-facebook
+                span
+                  a(href='https://www.facebook.com/sandvikkarriar') https://www.facebook.com/sandvikkarriar
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.nav-social-twitter
+                span
+                  a(href='https://twitter.com/Sandviksverige') https://twitter.com/Sandviksverige
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.nav-social-instagram
+                span
+                  a(href='https://instagram.com/sandvikgroup/') https://instagram.com/sandvikgroup/
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.nav-social-youtube
+                span
+                  a(href='https://www.youtube.com/user/sandvik') https://www.youtube.com/user/sandvik
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.nav-social-linkedin
+                span
+                  a(href='https://www.linkedin.com/company/sandvik') https://www.linkedin.com/company/sandvik
+          | &#x9;&#x9;&#x9;
+          h3.structural Mera Sandvik
+          | &#x9;&#x9;&#x9;
+          div
+            a.change-website(href='../../andra-sandvik-webbplatser/index.html')
+              | Andra Sandvik-webbplatser

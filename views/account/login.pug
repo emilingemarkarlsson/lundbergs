@@ -1,44 +1,923 @@
 extends ../layout
 
 block content
-  .page-header
-    h3 Sign in
-  form.form-horizontal(method='POST')
-    input(type='hidden', name='_csrf', value=_csrf)
-    .form-group
-      label.col-sm-3.control-label(for='email') Email
-      .col-sm-7
-        input.form-control(type='email', name='email', id='email', placeholder='Email', autofocus, required)
-    .form-group
-      label.col-sm-3.control-label(for='password') Password
-      .col-sm-7
-        input.form-control(type='password', name='password', id='password', placeholder='Password', required)
-    .form-group
-      .col-sm-offset-3.col-sm-7
-        button.col-sm-3.btn.btn-primary(type='submit')
-          i.fa.fa-user
-          | Login
-        a.btn.btn-link(href='/forgot') Forgot your password?
-    .form-group
-      .col-sm-offset-3.col-sm-7
-        hr
-    .form-group
-      .col-sm-offset-3.col-sm-7
-        a.btn.btn-block.btn-facebook.btn-social(href='/auth/facebook')
-          i.fa.fa-facebook
-          | Sign in with Facebook
-        a.btn.btn-block.btn-twitter.btn-social(href='/auth/twitter')
-          i.fa.fa-twitter
-          | Sign in with Twitter
-        a.btn.btn-block.btn-google.btn-social(href='/auth/google')
-          i.fa.fa-google-plus
-          | Sign in with Google
-        a.btn.btn-block.btn-github.btn-social(href='/auth/github')
-          i.fa.fa-github
-          | Sign in with GitHub
-        a.btn.btn-block.btn-linkedin.btn-social(href='/auth/linkedin')
-          i.fa.fa-linkedin
-          | Sign in with LinkedIn
-        a.btn.btn-block.btn-instagram.btn-social(href='/auth/instagram')
-          i.fa.fa-instagram
-          | Sign in with Instagram
+  .group.header(role='banner')
+    .group-inner
+        .logo-and-nav-main
+          a.logo(href='../index.html', title='Gå till webbplatsens startsida')
+            img(src='../../gui/i/logo.svg', alt='Sandvik Group')
+          | &#x9;&#x9;&#x9;
+          | &#x9;&#x9;
+          .nav-main(role='navigation', data-fetch-children-url='/api/navigation/')
+            ul
+              li
+                a(href='../index.html') Hem
+              | &#x9;
+              | &#x9;&#x9;&#x9;&#x9;
+              li.selected(data-page-id='3212:sv', data-selected='')
+                a(href='index.html') Produkter
+              | &#x9;
+              | &#x9;&#x9;&#x9;&#x9;
+              li(data-page-id='3272:sv', data-has-children='')
+                a(href='../nyheter-och-media/index.html') Nyheter &amp; media
+              | &#x9;
+              | &#x9;&#x9;&#x9;&#x9;
+              li(data-page-id='5852:sv', data-has-children='')
+                a(href='../investerare/index.html') Investerare
+              | &#x9;
+              | &#x9;&#x9;&#x9;&#x9;
+              li(data-page-id='6850:sv', data-has-children='')
+                a(href='../karriar/index.html') Karri&auml;r
+              | &#x9;
+              | &#x9;&#x9;&#x9;&#x9;
+              li(data-page-id='41523:sv', data-has-children='')
+                a(href='../om-oss/vart-foretag/index.html') Om oss
+              | &#x9;
+              | &#x9;&#x9;&#x9;&#x9;
+              li(data-page-id='28555:sv')
+                a(href='../kontakt/index.html') Kontakt
+        | &#x9;&#x9;
+        .language
+          p
+            | Du bes&ouml;ker:
+            strong Sandvik Group
+          | &#x9;&#x9;&#x9;
+          | &#x9;&#x9;&#x9;
+          | &#x9;&#x9;&#x9;&#x9;
+          a.change-language-link(href='../byt-land-och-sprak/index.html')
+            img(src='../../gui/i/flags/24/se.png', alt='Sweden')
+            span.structural :
+            |  Byt land/spr&aring;k
+        | &#x9;&#x9;
+        | &#x9;&#x9;&#x9;
+        form#search-form.search(role='search', action='../sok/index.html', data-querycompletion-url='/api/autocomplete/')
+          label.structural(for='search') S&ouml;k
+          | &#x9;&#x9;&#x9;&#x9;
+          input#search.search-field(type='search', name='q', placeholder='Sök')
+          | &#x9;&#x9;&#x9;&#x9;
+          input.search-submit(type='submit', value='Sök')
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;&#x9;
+    #main.cf.group
+      .group-inner
+        #content
+          .breadcrumbs(role='navigation')
+            strong Du &auml;r h&auml;r:
+            | &#x9;
+            span.current-page Produkter
+          | &#x9;
+          | &#x9;
+          | &#x9;
+          #content-primary(role='main')
+            .article.text
+              h1 Produkter
+              | &#x9;&#x9;&#x9;
+              .intro
+                p
+                  | Sandviks produkter &ouml;kar kundproduktiviteten samt bidrar till s&auml;krare arbetsmilj&ouml; och minskad milj&ouml;p&aring;verkan. G&aring; till v&aring;ra 
+                  a(href='../om-oss/industrierbjudanden/index.html') industrierbjudanden
+                  |  f&ouml;r att l&auml;sa mer.
+            | &#x9;&#x9;
+            .tabbed-module
+              #tab-categories.tab-content.tab-active
+                h2.tab-heading Kategorier
+                | &#x9;&#x9;&#x9;&#x9;
+                .exp-sections.exp-sections-product-cats
+                  .exp-section.collapsed
+                    h2
+                      img(alt='', src='../../filtered/51370/rszww100h100-90/productsmetalcutting123x123-1123724921-rszww100h100-90.jpg')
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Verktyg och verktygssystem f&ouml;r metallbearbetning
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    a.exp-sections-product-cat-link(href='http://www.sandvik.coromant.com/sv-se/pages/default.aspx')
+                      | Till webbplatsen
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    .exp-section-content
+                      .grid
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/48227/rszww120h120-90/drilling200x200--526827883-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.sandvik.coromant.com/sv-se/products/Pages/drilling-tools.aspx')
+                                  | Borrverktyg
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/48228/rszww120h120-90/reaming200x200--482023211-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.sandvik.coromant.com/sv-se/products/Pages/boring-and-reaming-tools.aspx?Country=se')
+                                  | Brotschverktyg
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/48222/rszww120h120-90/milling200x200--83644012-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.sandvik.coromant.com/sv-se/products/Pages/milling-tools.aspx')
+                                  | Fr&auml;sverktyg
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/48226/rszww120h120-90/turning200x200-172106933-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.sandvik.coromant.com/sv-se/products/Pages/turning-tools.aspx?Country=se')
+                                  | Svarvverktyg
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/48224/rszww120h120-90/tailor-made200x200--227761180-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.sandvik.coromant.com/sv-se/products/tailor_made/Pages/default.aspx')
+                                  | Tailor Made verktyg och sk&auml;r
+                            | &#x9;
+                            div
+                              p
+                                span  
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/48220/rszww120h120-90/boring200x200--495651020-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.sandvik.coromant.com/sv-se/products/Pages/boring-and-reaming-tools.aspx?Country=se')
+                                  | Uppborrningsverktyg
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/48225/rszww120h120-90/tooling-systems200x200--138813692-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.sandvik.coromant.com/sv-se/products/Pages/tooling-systems.aspx')
+                                  | Verktygssystem
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  .exp-section.collapsed
+                    h2
+                      img(alt='', src='../../filtered/2202/rszww100h100-90/mining-and-construction--1341895692-rszww100h100-90.jpg')
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Gruvmaskiner och -verktyg
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    a.exp-sections-product-cat-link(href='http://mining.sandvik.com/')
+                      | Till webbplatsen
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    .exp-section-content
+                      .grid
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37824/rszww120h120-90/breaker--922842334-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://mining.sandvik.com/en/products/equipment/crushing-and-screening/breaker-boom-systems-and-hydraulic-breakers')
+                                  | Hydraulhammare och demoleringsverktyg
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37871/rszww120h120-90/bulkmaterials200x200-1196313246-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='')
+                                  | Utrustning f&ouml;r hantering av bulkmaterial
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37875/rszww120h120-90/cone-crushers200x200-1351841072-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://mining.sandvik.com/en/products/equipment/crushing-and-screening')
+                                  | Krossar och siktar, station&auml;ra
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37865/rszww120h120-90/exploration200x200--489078627-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://mining.sandvik.com/en/products/equipment/exploration-drill-rigs')
+                                  | Borriggar f&ouml;r prospektering
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37870/rszww120h120-90/mech-cutting200x200-1097218766-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://mining.sandvik.com/en/products/equipment/mechanical-cutting')
+                                  | Maskiner f&ouml;r kontinuerlig brytning
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37872/rszww120h120-90/mineautomation200x200-1609828670-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://mining.sandvik.com/en/products/equipment/mine-automation-systems')
+                                  | System f&ouml;r gruvautomation
+                            | &#x9;
+                            div
+                              p
+                                span(lang='EN-US')  
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37868/rszww120h120-90/rocktools200x200--253135059-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://mining.sandvik.com/en/products/tools')
+                                  | Bergborrverktyg
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/38841/rszww120h120-90/mining-parts200x200--1685803713-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://mining.sandvik.com/en/products/parts')
+                                  | Reservdelar och slitdelar
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37867/rszww120h120-90/surface-drills200x200--97376931-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://mining.sandvik.com/en/products/equipment/surface-drilling')
+                                  | Borriggar f&ouml;r ovanjord
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37821/rszww120h120-90/tunneling200x200--1690803166-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://mining.sandvik.com/en/products/equipment/underground-drilling-and-bolting')
+                                  | Maskiner f&ouml;r tunnelborrning
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37866/rszww120h120-90/underground-drill-rigs200x200--444956499-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://mining.sandvik.com/en/products/equipment/underground-drilling-and-bolting')
+                                  | Borriggar f&ouml;r underjord
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37869/rszww120h120-90/loading-hauling200x200-1285076302-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://mining.sandvik.com/en/products/equipment/underground-loading-and-hauling')
+                                  | Last- och transportmaskiner
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  .exp-section.collapsed
+                    h2
+                      img(alt='', src='../../filtered/2198/rszww100h100-90/construction-equipment-and-tools_961x301--1335749548-rszww100h100-90.jpg')
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Anl&auml;ggningsmaskiner och -verktyg
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    a.exp-sections-product-cat-link(href='http://construction.sandvik.com/')
+                      | Till webbplatsen
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    .exp-section-content
+                      .grid
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37824/rszww120h120-90/breaker--922842334-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://construction.sandvik.com/products/breaking-and-demolition-tools/')
+                                  | Hydraulhammare och demoleringsverktyg
+                            | &#x9;
+                            div
+                              p
+                                span(lang='EN-US')  
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37823/rszww120h120-90/mcs200x200--1095354254-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://construction.sandvik.com/products/mobile-crushers-and-screens/')
+                                  | Krossar och siktar, mobila verk
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37819/rszww120h120-90/stationary200x200--1896139582-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://construction.sandvik.com/products/stationary-crushers-and-screens/')
+                                  | Krossar och siktar, station&auml;ra
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37822/rszww120h120-90/rocktools200x200--1528878814-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://construction.sandvik.com/products/rock-tools/')
+                                  | Bergborrverktyg
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37818/rszww120h120-90/spare200x200-1936255794-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://construction.sandvik.com/products/spare-parts-and-wear-parts/')
+                                  | Reservdelar och slitdelar
+                            | &#x9;
+                            div
+                              p
+                                span(lang='EN-US')  
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37820/rszww120h120-90/surface-drilling200x200--2032240670-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://construction.sandvik.com/products/surface-drill-rigs/')
+                                  | Borriggar
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/37821/rszww120h120-90/tunneling200x200--1690803166-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://construction.sandvik.com/products/tunneling-equipment/')
+                                  | Maskiner f&ouml;r tunnelborrning
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  .exp-section.collapsed
+                    h2
+                      img(alt='', src='../../filtered/2203/rszww100h100-90/stainless-steels-special-alloys-and-titanium--1340166396-rszww100h100-90.jpg')
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Rostfria st&aring;l, speciallegeringar och titan
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    a.exp-sections-product-cat-link(href='http://www.smt.sandvik.com/se/')
+                      | Till webbplatsen
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    .exp-section-content
+                      .grid
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/50259/rszww120h120-90/strip-steel_150x150--855700791-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.smt.sandvik.com/se/produkter/strip-steel/')
+                                  | Bandst&aring;l
+                            | &#x9;
+                            div
+                              p Precisionsband.
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/2171/rszww120h120-90/hot-isostatic-pressed-hip-products--1633361817-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.smt.sandvik.com/se/produkter/hot-isostatic-pressed-hip-products/')
+                                  | Het-isostatiskt pressade (HIP) produkter
+                            | &#x9;
+                            div
+                              p
+                                | Produkter i n&auml;ra f&auml;rdig form tillverkade genom pulvermetallurgisk het-isostatisk pressning.
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/2173/rszww120h120-90/metal-powders-and-ce-alloy-products-width152--1644067977-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.smt.sandvik.com/se/produkter/metal-powder/')
+                                  | Metallpulver
+                            | &#x9;
+                            div
+                              p Gasatomiserade metallpulver.
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/2182/rszww120h120-90/sheet-and-plate-width152--1616515801-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.smt.sandvik.com/se/produkter/plate-and-sheet/')
+                                  | Pl&aring;t
+                            | &#x9;
+                            div
+                              p Pl&aring;t i speciallegeringar.
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/2176/rszww120h120-90/osprey-ce-alloy-products-width152--1618091785-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.smt.sandvik.com/se/produkter/ce-alloys/')
+                                  | Produkter av CE-legeringar
+                            | &#x9;
+                            div
+                              p
+                                | Produkter gjorda av legeringar med kontrollerad l&auml;ngdutvidgning, s&aring; kallade CE (controlled expansion) alloys.
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/2189/rszww120h120-90/tube-pipe-fittings-and-flanges--1785658201-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.smt.sandvik.com/se/produkter/tube-pipe-fittings-and-flanges/')
+                                  | R&ouml;rprodukter
+                            | &#x9;
+                            div
+                              p S&ouml;ml&ouml;sa och svetsade r&ouml;r, r&ouml;rdelar och fl&auml;nsar.
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/50258/rszww120h120-90/bar-hollow-bar_150x150--1290593367-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.smt.sandvik.com/se/produkter/bar-and-hollow-bar/')
+                                  | St&aring;ng och &auml;mnesr&ouml;r
+                            | &#x9;
+                            div
+                              p
+                                | St&aring;ng, &auml;mnesr&ouml;r, automatst&aring;l och h&aring;lat borrst&aring;l f&ouml;r bergborrning med topphammare.
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/2193/rszww120h120-90/welding-products-width152--1783029193-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.smt.sandvik.com/se/produkter/welding-products/')
+                                  | Svetsprodukter
+                            | &#x9;
+                            div
+                              p Svetstr&aring;d, belagda elektroder, svetsband och svetspulver.
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/50260/rszww120h120-90/wire_150x150--1043876871-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.smt.sandvik.com/se/produkter/wire/')
+                                  | Tr&aring;d
+                            | &#x9;
+                            div
+                              p Rund tr&aring;d, platt tr&aring;d och profiler.
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/2160/rszww120h120-90/billets-and-blooms--1732902649-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.smt.sandvik.com/se/produkter/billets-and-blooms/')
+                                  | &Auml;mnen och g&ouml;t
+                            | &#x9;
+                            div
+                              p Smides&auml;mnen, vals&auml;mnen, extrusions&auml;mnen och str&auml;nggjutna &auml;mnen.
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  .exp-section.collapsed
+                    h2
+                      img(alt='', src='../../filtered/41055/rszww100h100-90/furnace-products-and-heating-systems200x200--972443686-rszww100h100-90.jpg')
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Ugnsprodukter och v&auml;rmebest&auml;ndiga material
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    a.exp-sections-product-cat-link(href='http://www.smt.sandvik.com/se/')
+                      | Till webbplatsen
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    .exp-section-content
+                      .grid
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/2185/rszww120h120-90/stp-width152--1621914057-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='../../link/83f75cc621724ba88c920d04773fc1d5.aspx.html')
+                                  | Diffusionsugnar
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/38862/rszww120h120-90/furnace-prod200x200--1210347298-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='../../link/3202feffc89a4545bc67a7d9c82d6230.aspx.html')
+                                  | Ugnsprodukter och motst&aring;ndsmaterial
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  .exp-section.collapsed
+                    h2
+                      img(alt='', src='../../filtered/17071/rszww100h100-90/hard-and-super-hard-materials--132897251-rszww100h100-90.jpg')
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;H&aring;rda och superh&aring;rda material
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    a.exp-sections-product-cat-link(href='http://www.hyperion.sandvik.com/')
+                      | Till webbplatsen
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    .exp-section-content
+                      .grid
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/2200/rszww120h120-90/mesh-and-poly-products--1335837596-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.hardmaterials.sandvik.com/en/products/diamond-and-cbn/')
+                                  | Diamant och CBN
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/2196/rszww120h120-90/c_powder_sh2--1335837596-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://www.hyperion.sandvik.com/en/products/cemented-carbide/')
+                                  | H&aring;rdmetall
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  .exp-section.collapsed
+                    h2
+                      img(alt='', src='../../filtered/2204/rszww100h100-90/steel-belts-press-plates-and-steel-belt-based-systems--1341167644-rszww100h100-90.jpg')
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Processystem f&ouml;r industriella till&auml;mpningar
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    a.exp-sections-product-cat-link(href='http://www.processsystems.sandvik.com/')
+                      | Till webbplatsen
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    .exp-section-content
+                      .grid
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/2178/rszww120h120-90/ps-width152--1612663993-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://processsystems.sandvik.com/products/')
+                                  | Processystem
+                        .teaser.teaser-floated-image(data-column-span='6')
+                          .teaser-image
+                            img(alt='', src='../../filtered/2184/rszww120h120-90/steel-belts--1810565049-rszww120h120-90.jpg')
+                          .teaser-content
+                            .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                              h3
+                                a(href='http://processsystems.sandvik.com/products/')
+                                  | St&aring;lband
+              | &#x9;&#x9;&#x9;
+              #tab-a-z.tab-content
+                h2.tab-heading Produkter A-&Ouml;
+                | &#x9;&#x9;&#x9;&#x9;
+                .a-z.text
+                  .a-z-inner
+                    .grid.grid-collapsed
+                      div(data-column-span='3')
+                        .a-z-letter
+                          h2 B
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              a(href='http://www.smt.sandvik.com/se/produkter/strip-steel/') Bandst&aring;l
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              div(data-popover-trigger='bergborrverktyg') Bergborrverktyg
+                              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                              #bergborrverktyg.popover
+                                .a-z-organization-chooser
+                                  p V&auml;lj anv&auml;ndningsomr&aring;de
+                                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                  ul
+                                    li
+                                      a(href='http://mining.sandvik.com/en/products/tools', title='Bergborrverktyg')
+                                        span Bergborrverktyg 
+                                        | Gruvindustri
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    li
+                                      a(href='http://construction.sandvik.com/products/rock-tools/', title='Bergborrverktyg')
+                                        span Bergborrverktyg 
+                                        | Anl&auml;ggningsindustri
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://construction.sandvik.com/products/surface-drill-rigs/') Borriggar
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://mining.sandvik.com/en/products/equipment/surface-drilling') Borriggar f&ouml;r ovanjord
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://mining.sandvik.com/en/products/equipment/exploration-drill-rigs') Borriggar f&ouml;r prospektering
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://mining.sandvik.com/en/products/equipment/underground-drilling-and-bolting') Borriggar f&ouml;r underjord
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://www.sandvik.coromant.com/sv-se/products/Pages/drilling-tools.aspx') Borrverktyg
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://www.sandvik.coromant.com/sv-se/products/Pages/boring-and-reaming-tools.aspx?Country=se') Brotschverktyg
+                        | &#x9;&#x9;&#x9;&#x9;
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;
+                        .a-z-letter
+                          h2 D
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              a(href='http://www.hardmaterials.sandvik.com/en/products/diamond-and-cbn/') Diamant och CBN
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='../../link/83f75cc621724ba88c920d04773fc1d5.aspx.html') Diffusionsugnar
+                        | &#x9;&#x9;&#x9;&#x9;
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;
+                        .a-z-letter
+                          h2 F
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              a(href='http://www.sandvik.coromant.com/sv-se/products/Pages/milling-tools.aspx') Fr&auml;sverktyg
+                        | &#x9;&#x9;&#x9;&#x9;
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;
+                        .a-z-letter
+                          h2 H
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              a(href='http://www.smt.sandvik.com/se/produkter/hot-isostatic-pressed-hip-products/') Het-isostatiskt pressade (HIP) produkter
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              div(data-popover-trigger='hydraulhammare-och-demoleringsverktyg') Hydraulhammare och demoleringsverktyg
+                              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                              #hydraulhammare-och-demoleringsverktyg.popover
+                                .a-z-organization-chooser
+                                  p V&auml;lj anv&auml;ndningsomr&aring;de
+                                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                  ul
+                                    li
+                                      a(href='http://mining.sandvik.com/en/products/equipment/crushing-and-screening/breaker-boom-systems-and-hydraulic-breakers', title='Hydraulhammare och demoleringsverktyg')
+                                        span Hydraulhammare och demoleringsverktyg 
+                                        | Gruvindustri
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    li
+                                      a(href='http://construction.sandvik.com/products/breaking-and-demolition-tools/', title='Hydraulhammare och demoleringsverktyg')
+                                        span Hydraulhammare och demoleringsverktyg 
+                                        | Anl&auml;ggningsindustri
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://www.hyperion.sandvik.com/en/products/cemented-carbide/') H&aring;rdmetall
+                      | &#x9;&#x9;&#x9;&#x9;
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;
+                      div(data-column-span='3')
+                        .a-z-letter
+                          h2 K
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              a(href='http://construction.sandvik.com/products/mobile-crushers-and-screens/') Krossar och siktar, mobila verk
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              div(data-popover-trigger='krossar-och-siktar-stationara') Krossar och siktar, station&auml;ra
+                              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                              #krossar-och-siktar-stationara.popover
+                                .a-z-organization-chooser
+                                  p V&auml;lj anv&auml;ndningsomr&aring;de
+                                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                  ul
+                                    li
+                                      a(href='http://mining.sandvik.com/en/products/equipment/crushing-and-screening', title='Krossar och siktar, stationära')
+                                        span Krossar och siktar, station&auml;ra 
+                                        | Gruvindustri
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    li
+                                      a(href='http://construction.sandvik.com/products/stationary-crushers-and-screens/', title='Krossar och siktar, stationära')
+                                        span Krossar och siktar, station&auml;ra 
+                                        | Anl&auml;ggningsindustri
+                        | &#x9;&#x9;&#x9;&#x9;
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;
+                        .a-z-letter
+                          h2 L
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              a(href='http://mining.sandvik.com/en/products/equipment/underground-loading-and-hauling') Last- och transportmaskiner
+                        | &#x9;&#x9;&#x9;&#x9;
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;
+                        .a-z-letter
+                          h2 M
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              a(href='http://mining.sandvik.com/en/products/equipment/mechanical-cutting') Maskiner f&ouml;r kontinuerlig brytning
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              div(data-popover-trigger='maskiner-for-tunnelborrning') Maskiner f&ouml;r tunnelborrning
+                              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                              #maskiner-for-tunnelborrning.popover
+                                .a-z-organization-chooser
+                                  p V&auml;lj anv&auml;ndningsomr&aring;de
+                                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                  ul
+                                    li
+                                      a(href='http://mining.sandvik.com/en/products/equipment/underground-drilling-and-bolting', title='Maskiner för tunnelborrning')
+                                        span Maskiner f&ouml;r tunnelborrning 
+                                        | Gruvindustri
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    li
+                                      a(href='http://construction.sandvik.com/products/tunneling-equipment/', title='Maskiner för tunnelborrning')
+                                        span Maskiner f&ouml;r tunnelborrning 
+                                        | Anl&auml;ggningsindustri
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://www.smt.sandvik.com/se/produkter/metal-powder/') Metallpulver
+                        | &#x9;&#x9;&#x9;&#x9;
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;
+                        .a-z-letter
+                          h2 P
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              a(href='http://www.smt.sandvik.com/se/produkter/plate-and-sheet/') Pl&aring;t
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://processsystems.sandvik.com/products/') Processystem
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://www.smt.sandvik.com/se/produkter/ce-alloys/') Produkter av CE-legeringar
+                      | &#x9;&#x9;&#x9;&#x9;
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;
+                      div(data-column-span='3')
+                        .a-z-letter
+                          h2 R
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              div(data-popover-trigger='reservdelar-och-slitdelar') Reservdelar och slitdelar
+                              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                              #reservdelar-och-slitdelar.popover
+                                .a-z-organization-chooser
+                                  p V&auml;lj anv&auml;ndningsomr&aring;de
+                                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                  ul
+                                    li
+                                      a(href='http://mining.sandvik.com/en/products/parts', title='Reservdelar och slitdelar')
+                                        span Reservdelar och slitdelar 
+                                        | Gruvindustri
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    li
+                                      a(href='http://construction.sandvik.com/products/spare-parts-and-wear-parts/', title='Reservdelar och slitdelar')
+                                        span Reservdelar och slitdelar 
+                                        | Anl&auml;ggningsindustri
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://www.smt.sandvik.com/se/produkter/tube-pipe-fittings-and-flanges/') R&ouml;rprodukter
+                        | &#x9;&#x9;&#x9;&#x9;
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;
+                        .a-z-letter
+                          h2 S
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              a(href='http://processsystems.sandvik.com/products/') St&aring;lband
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://www.smt.sandvik.com/se/produkter/bar-and-hollow-bar/') St&aring;ng och &auml;mnesr&ouml;r
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://www.sandvik.coromant.com/sv-se/products/Pages/turning-tools.aspx?Country=se') Svarvverktyg
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://www.smt.sandvik.com/se/produkter/welding-products/') Svetsprodukter
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://mining.sandvik.com/en/products/equipment/mine-automation-systems') System f&ouml;r gruvautomation
+                        | &#x9;&#x9;&#x9;&#x9;
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;
+                        .a-z-letter
+                          h2 T
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              a(href='http://www.sandvik.coromant.com/sv-se/products/tailor_made/Pages/default.aspx') Tailor Made verktyg och sk&auml;r
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://www.smt.sandvik.com/se/produkter/wire/') Tr&aring;d
+                      | &#x9;&#x9;&#x9;&#x9;
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;
+                      div(data-column-span='3')
+                        .a-z-letter
+                          h2 U
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              a(href='../../link/3202feffc89a4545bc67a7d9c82d6230.aspx.html') Ugnsprodukter och motst&aring;ndsmaterial
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='http://www.sandvik.coromant.com/sv-se/products/Pages/boring-and-reaming-tools.aspx?Country=se') Uppborrningsverktyg
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              a(href='') Utrustning f&ouml;r hantering av bulkmaterial
+                        | &#x9;&#x9;&#x9;&#x9;
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;
+                        .a-z-letter
+                          h2 V
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              a(href='http://www.sandvik.coromant.com/sv-se/products/Pages/tooling-systems.aspx') Verktygssystem
+                        | &#x9;&#x9;&#x9;&#x9;
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;
+                        .a-z-letter
+                          h2 &Auml;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul
+                            li
+                              a(href='http://www.smt.sandvik.com/se/produkter/billets-and-blooms/') &Auml;mnen och g&ouml;t
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    |             
+    .group.footer.footer-polygon(role='contentinfo')
+      .group-inner
+        h2.structural Sidfot
+        | &#x9;&#x9;
+        .footer-left
+          img(src='../../gui/i/logo.svg', alt='Sandvik Group')
+          | &#x9;&#x9;&#x9;
+          .statement
+            p
+              | Sandvik &auml;r en verkstadskoncern inom gruv- och bergbrytning, metallbearbetning och materialteknik.
+          | &#x9;&#x9;&#x9;
+          .copyright
+            p Copyright &copy; Sandvik AB; (publ)
+            p Box 510, 101 30 Stockholm, Sverige
+            p Tel 08 456 11 00
+        | &#x9;&#x9;
+        .footer-right
+          .nav-supp(role='navigation')
+            ul
+              li
+                a(href='../kontakt/index.html') Kontakt
+              li
+                a(href='../om-webbplatsen/index.html') Om webbplatsen
+          | &#x9;&#x9;&#x9;
+          .nav-social
+            h3.structural Hittas oss p&aring;:
+            | &#x9;&#x9;&#x9;&#x9;
+            ul
+              li.nav-social-facebook
+                span
+                  a(href='https://www.facebook.com/sandvikkarriar') https://www.facebook.com/sandvikkarriar
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.nav-social-twitter
+                span
+                  a(href='https://twitter.com/Sandviksverige') https://twitter.com/Sandviksverige
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.nav-social-instagram
+                span
+                  a(href='https://instagram.com/sandvikgroup/') https://instagram.com/sandvikgroup/
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.nav-social-youtube
+                span
+                  a(href='https://www.youtube.com/user/sandvik') https://www.youtube.com/user/sandvik
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.nav-social-linkedin
+                span
+                  a(href='https://www.linkedin.com/company/sandvik') https://www.linkedin.com/company/sandvik
+          | &#x9;&#x9;&#x9;
+          h3.structural Mera Sandvik
+          | &#x9;&#x9;&#x9;
+          div
+            a.change-website(href='../andra-sandvik-webbplatser/index.html')
+              | Andra Sandvik-webbplatser
