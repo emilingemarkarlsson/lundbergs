@@ -1,160 +1,86 @@
 extends ../layout
 
 block content
-  .group.header(role='banner')
-    .group-inner
+  div
+    .group.header.header-borderless(role='banner')
+      .group-inner
         .logo-and-nav-main
-          a.logo(href='../index.html', title='Gå till webbplatsens startsida')
-            img(src='../../gui/i/logo.svg', alt='Sandvik Group')
-          | &#x9;&#x9;&#x9;
-          | &#x9;&#x9;
+          a.logo(href='/', title='Gå till webbplatsens startsida')
+            img(src='images/i/logo.svg', alt='Sandvik Group')
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
           .nav-main(role='navigation', data-fetch-children-url='/api/navigation/')
             ul
-              li
-                a(href='../index.html') Hem
-              | &#x9;
-              | &#x9;&#x9;&#x9;&#x9;
+              li.selected(data-selected='')
+                a(href='/') hem
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
               li(data-page-id='3212:sv')
-                a(href='../produkter/index.html') Produkter
-              | &#x9;
-              | &#x9;&#x9;&#x9;&#x9;
-              li.selected(data-page-id='3272:sv', data-has-children='', data-selected='')
-                a(href='index.html') Nyheter &amp; media
-              | &#x9;
-              | &#x9;&#x9;&#x9;&#x9;
-              li(data-page-id='5852:sv', data-has-children='')
-                a(href='../investerare/index.html') Investerare
-              | &#x9;
-              | &#x9;&#x9;&#x9;&#x9;
-              li(data-page-id='6850:sv', data-has-children='')
-                a(href='../karriar/index.html') Karri&auml;r
-              | &#x9;
-              | &#x9;&#x9;&#x9;&#x9;
+                a(href='/login') Produkter
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li(data-page-id='3212:sv')
+                a(href='/') Service
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;              
               li(data-page-id='41523:sv', data-has-children='')
-                a(href='../om-oss/vart-foretag/index.html') Om oss
-              | &#x9;
-              | &#x9;&#x9;&#x9;&#x9;
+                a(href='om-oss/vart-foretag/index.html') Om oss
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
               li(data-page-id='28555:sv')
-                a(href='../kontakt/index.html') Kontakt
-        | &#x9;&#x9;
+                a(href='kontakt/index.html') Kontakt
+        | &#x9;&#x9;&#x9;&#x9;&#x9;
         .language
           p
-            | Du bes&ouml;ker:
-            strong Sandvik Group
-          | &#x9;&#x9;&#x9;
-          | &#x9;&#x9;&#x9;
-          | &#x9;&#x9;&#x9;&#x9;
-          a.change-language-link(href='../byt-land-och-sprak/index.html')
-            img(src='../../gui/i/flags/24/se.png', alt='Sweden')
-            span.structural :
-            |  Byt land/spr&aring;k
-        | &#x9;&#x9;
-        | &#x9;&#x9;&#x9;
-        form#search-form.search(role='search', action='../sok/index.html', data-querycompletion-url='/api/autocomplete/')
-          label.structural(for='search') S&ouml;k
-          | &#x9;&#x9;&#x9;&#x9;
-          input#search.search-field(type='search', name='q', placeholder='Sök')
-          | &#x9;&#x9;&#x9;&#x9;
-          input.search-submit(type='submit', value='Sök')
-    | &#x9;&#x9;
-    | &#x9;&#x9;
-    | &#x9;&#x9;
-    | &#x9;&#x9;
-    | &#x9;&#x9;
-    | &#x9;&#x9;&#x9;
+            | Kontakt:
+            strong  info@lundbergsab.com
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
     #main.cf.group
       .group-inner
         #content
-          .content-1
-            .nav-sub(role='navigation')
-              h2.structural Undernavigering f&ouml;r
-              | &#x9;
-              | &#x9;&#x9;
-              ul
-                li(data-page-id='3272:sv', data-has-children='', data-selected='', data-expanded='')
-                  a(href='index.html')
-                    strong Nyheter &amp; media
-                  | &#x9;
-                  | &#x9;&#x9;
-                  ul
-                    li(data-page-id='3294:sv')
-                      a(href='nyheter/index.html')
-                        span Arkiv
-                    | &#x9;
-                    | &#x9;&#x9;&#x9;
-                    li(data-page-id='6434:sv')
-                      a(href='tidning/index.html')
-                        span Tidning
-                    | &#x9;
-                    | &#x9;&#x9;&#x9;
-                    li(data-page-id='4122:sv', data-has-children='')
-                      a(href='kalender/index.html')
-                        span Kalender
-                    | &#x9;
-                    | &#x9;&#x9;&#x9;
-                    li(data-page-id='5808:sv')
-                      a(href='b/index.html')
-                        span Bildbank och logotyp
-                    | &#x9;
-                    | &#x9;&#x9;&#x9;
-                    li(data-page-id='51624:sv')
-                      a(href='sandvik-pa-sociala-medier/index.html')
-                        span Sociala medier
-                    | &#x9;
-                    | &#x9;&#x9;&#x9;
-                    li(data-page-id='5819:sv')
-                      a(href='kontaktpersoner/index.html')
-                        span Kontaktpersoner
           | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
           .content-2
             #content-primary(role='main')
               .breadcrumbs(role='navigation')
                 strong Du &auml;r h&auml;r:
                 | &#x9;
-                span.current-page Nyheter &amp; media
               | &#x9;
               | &#x9;&#x9;
               | &#x9;&#x9;
               .article
-                h1.article-heading-h1 Nyheter &amp; media
+                h1.article-heading-h1 service och tjänster
               | &#x9;&#x9;
               | &#x9;&#x9;&#x9;
               .listing(data-collapsable='', data-init-collapsed='true')
                 .listing-header
-                  h2(data-collapsable-heading='') Popul&auml;ra artiklar
                 | &#x9;&#x9;&#x9;&#x9;
                 ol.grid.text.ordered-teasers
                   li(data-column-span='4')
                     .teaser
                       .teaser-content
-                        img(alt='', src='../../filtered/51498/rszww273h165-90/how-carbide-inserts-are-made-by-sandvik-coromant-350x194-799286938-rszww273h165-90.jpg')
+                        //img(alt='', src='../../filtered/51498/rszww273h165-90/how-carbide-inserts-are-made-by-sandvik-coromant-350x194-799286938-rszww273h165-90.jpg')
                         | &#x9;&#x9;
                         p
-                          a(href='nyheter/2017/01/skar-analyserade-ner-till-minsta-atom/index.html') Sk&auml;r &ndash; analyserade ned till minsta atom
+                          p(href='') Sk&auml;r &ndash; analyserade ned till minsta atom
                         | &#x9;&#x9;
-                        p.date-category
+                        //p.date-category
                           | 3 feb 2017
                           span.structural , 
                           span Artikel
                   li(data-column-span='4')
                     .teaser
                       .teaser-content
-                        img(src='../../filtered/51416/rszww273h165-90/top-center-drill-bit-880x480-114113183-rszww273h165-90.jpg', alt='Top center drill bit')
+                        //img(src='../../filtered/51416/rszww273h165-90/top-center-drill-bit-880x480-114113183-rszww273h165-90.jpg', alt='Top center drill bit')
                         | &#x9;&#x9;
                         p
-                          a(href='nyheter/2017/01/moderna-bergborrar-hanterar-tuffa-kundutmaningar/index.html') Moderna bergborrar hanterar tuffa kundutmaningar
+                          p(href='') Moderna bergborrar hanterar tuffa kundutmaningar
                         | &#x9;&#x9;
-                        p.date-category
+                        //p.date-category
                           | 30 jan 2017
                           span.structural , 
                           span Artikel
                   li(data-column-span='4')
                     .teaser
                       .teaser-content
-                        img(alt='', src='../../filtered/51592/rszww273h165-90/sandvik-och-tekniska-museet_358x--786245867-rszww273h165-90.jpg')
+                        //img(alt='', src='../../filtered/51592/rszww273h165-90/sandvik-och-tekniska-museet_358x--786245867-rszww273h165-90.jpg')
                         | &#x9;&#x9;
                         p
-                          a(href='nyheter/2017/02/sandvik-och-tekniska-museet-gor-gemensam-insats-for-teknikintresset-i-framtiden/index.html') Sandvik och Tekniska museet g&ouml;r gemensam insats f&ouml;r teknikintresset i framtiden
+                          p(href='') Sandvik och Tekniska museet g&ouml;r gemensam insats f&ouml;r teknikintresset i framtiden
                         | &#x9;&#x9;
                         p.date-category
                           | 6 feb 2017
@@ -166,7 +92,7 @@ block content
               | &#x9;&#x9;&#x9;
               .tabbed-module
                 #all.tab-content.text
-                  h2.tab-heading Alla
+                  h2.tab-heading Tjänster
                   |     
                   |     
                   | &#x9;
@@ -188,7 +114,7 @@ block content
                           | Idag uppm&auml;rksammas V&auml;rldss&auml;kerhetsdagen, World Day for Safety and Health at Work &ouml;ver hela v&auml;rlden. H&auml;lsa och s&auml;kerhet p&aring; arbetsplatsen har h&ouml;gsta prioritet p&aring; Sandvik vilket bland annat resulterat i att vi har minskat olycksfrekvensen (LTIFR) sju &aring;r i rad till en historiskt l&aring;g niv&aring;.
                     | &#x9;&#x9;
                     | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
+                    //.teaser
                       .teaser-heading.teaser-heading-lowercase
                         h2
                           a(href='nyheter/2017/04/sandviks-arsstamma-2017/index.html') Sandviks &aring;rsst&auml;mma 2017
@@ -203,7 +129,7 @@ block content
                         p Sandvik AB h&ouml;ll den 27 april 2017 &aring;rsst&auml;mma i Sandviken.
                         p
                           a(href='https://sandvik-live.creo.se/agm-2017/se') Se en inspelning av koncernchef Bj&ouml;rn Rosengrens presentation
-                    | &#x9;&#x9;
+                  //  | &#x9;&#x9;
                     | &#x9;&#x9;&#x9;&#x9;&#x9;
                     .teaser.teaser-floated-image
                       .teaser-heading.teaser-heading-lowercase
@@ -309,7 +235,7 @@ block content
                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                         p
                           | Den nya svarvningsmetoden PrimeTurning&trade; &auml;r en innovation med potential att omdefiniera svarvningskonsten.
-                #news.tab-content.text
+                //#news.tab-content.text
                   h2.tab-heading Nyheter
                   |     
                   |     
@@ -448,7 +374,7 @@ block content
                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                         p
                           | Fr&aring;n den 1 januari 2017 bildas produktomr&aring;det Additive Manufacturing inom Sandvik Machining Solutions.
-                #pressreleases.tab-content.text
+                //#pressreleases.tab-content.text
                   h2.tab-heading Pressmeddelanden
                   |     
                   |             
@@ -611,7 +537,7 @@ block content
                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                         p
                           | Den 21 november 2017 kommer Sandvik att h&aring;lla kapitalmarknadsdag p&aring; Walter AG:s, ett varum&auml;rke inom Sandvik Machining Solutions, huvudkontor i T&uuml;bingen, Tyskland.
-                #stories.tab-content.text
+                //#stories.tab-content.text
                   h2.tab-heading Artiklar
                   |     
                   |     
@@ -760,11 +686,11 @@ block content
                         p
                           | Idag firar vi internationella kvinnodagen genom att uppm&auml;rksamma flera viktiga kompetenser inom v&aring;rt f&ouml;retag, medarbetare som bidrar till v&aring;ra kunders framg&aring;ngar och v&aring;rt f&ouml;retags utveckling.
                 p
-                  a.button(href='nyheter/index.html')
-                    | Nyhetsarkiv
+                  //a.button(href='nyheter/index.html')
+                    //| Nyhetsarkiv
               | &#x9;&#x9;
               | &#x9;&#x9;
-              .grid
+              //.grid
                 .twitter-teaser(data-column-span='12')
                   h2 Sandvik p&aring; Twitter
                   | &#x9;&#x9;
@@ -832,27 +758,24 @@ block content
               | &#x9;
               ul
                 li.page-action-email-us
-                  a.open-in-dialog.open-email-dialog(href='../contact/contact-form/index-sender=3272.html#email-form') Mejla oss
+                  a.open-in-dialog.open-email-dialog(href='') Mejla oss
             | &#x9;&#x9;&#x9;&#x9;&#x9;
             .page-actions-share
               h2 Dela med andra
               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
               ul
-                li.page-action-twitter
-                  a(target='_blank', href='https://twitter.com/intent/tweet?url=http://www.home.sandvik/se/nyheter-och-media/&text=Nyheter+%26+media&hashtags=sandvik') Twitter
-                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                li.page-action-facebook
+                //li.page-action-facebook
                   a(target='_blank', href='https://www.facebook.com/sharer/sharer.php?u=http://www.home.sandvik/se/nyheter-och-media/') Facebook
                 | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                 li.page-action-linkedin
                   a(target='_blank', href='https://www.linkedin.com/shareArticle?url=http://www.home.sandvik/se/nyheter-och-media/&title=Nyheter+%26+media&summary=&mini=true') LinkedIn
                 | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                li.page-action-email
-                  a(target='_blank', href='mailto:?subject=Nyheter & media&body=http://www.home.sandvik/se/nyheter-och-media/') Epost
+                //li.page-action-email
+                  a(target='_blank', href='mailto:?subject=Lundberg& media&body=http://www.home.sandvik/se/nyheter-och-media/') Epost
           | &#x9;&#x9;&#x9;&#x9;
           | &#x9;&#x9;&#x9;&#x9;&#x9;
           .send-feedback
-            a.send-feedback-link(href='index-show=send-feedback.html#send-feedback') Skicka kommentar p&aring; denna sida
+            //a.send-feedback-link(href='index-show=send-feedback.html#send-feedback') Skicka kommentar p&aring; denna sida
     | &#x9;&#x9;
     | &#x9;&#x9;
     | &#x9;&#x9;
@@ -864,42 +787,44 @@ block content
         h2.structural Sidfot
         | &#x9;&#x9;
         .footer-left
-          img(src='../../gui/i/logo.svg', alt='Sandvik Group')
+          img(src='images/i/logo.svg', alt='Lundbergs')
           | &#x9;&#x9;&#x9;
           .statement
-            p
+            //p
               | Sandvik &auml;r en verkstadskoncern inom gruv- och bergbrytning, metallbearbetning och materialteknik.
           | &#x9;&#x9;&#x9;
           .copyright
-            p Copyright &copy; Sandvik AB; (publ)
-            p Box 510, 101 30 Stockholm, Sverige
-            p Tel 08 456 11 00
+            p Copyright &copy; Lundbergs AB;
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            p Klingekärrsgatan 10, 566 31 Habo, Sverige
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            p Tel 010-102 25 50
         | &#x9;&#x9;
         .footer-right
           .nav-supp(role='navigation')
             ul
               li
-                a(href='../kontakt/index.html') Kontakt
+                a(href='') Kontakt
               li
-                a(href='../om-webbplatsen/index.html') Om webbplatsen
+                a(href='') Besök oss
           | &#x9;&#x9;&#x9;
           .nav-social
             h3.structural Hittas oss p&aring;:
             | &#x9;&#x9;&#x9;&#x9;
             ul
-              li.nav-social-facebook
+              //li.nav-social-facebook
                 span
                   a(href='https://www.facebook.com/sandvikkarriar') https://www.facebook.com/sandvikkarriar
               | &#x9;&#x9;&#x9;&#x9;&#x9;
-              li.nav-social-twitter
+              //li.nav-social-twitter
                 span
                   a(href='https://twitter.com/Sandviksverige') https://twitter.com/Sandviksverige
               | &#x9;&#x9;&#x9;&#x9;&#x9;
-              li.nav-social-instagram
+              //li.nav-social-instagram
                 span
                   a(href='https://instagram.com/sandvikgroup/') https://instagram.com/sandvikgroup/
               | &#x9;&#x9;&#x9;&#x9;&#x9;
-              li.nav-social-youtube
+              //li.nav-social-youtube
                 span
                   a(href='https://www.youtube.com/user/sandvik') https://www.youtube.com/user/sandvik
               | &#x9;&#x9;&#x9;&#x9;&#x9;
@@ -910,5 +835,6 @@ block content
           h3.structural Mera Sandvik
           | &#x9;&#x9;&#x9;
           div
-            a.change-website(href='../andra-sandvik-webbplatser/index.html')
+            //a.change-website(href='../andra-sandvik-webbplatser/index.html')
               | Andra Sandvik-webbplatser
+                
