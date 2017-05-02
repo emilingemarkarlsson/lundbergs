@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="290px" height="101px" viewBox="0 0 290 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="273px" height="51px" viewBox="0 0 273 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
     <title>Group 2</title>
     <desc>Created with Sketch.</desc>
@@ -8,8 +8,7 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group-2">
-            <rect id="Rectangle" stroke="#212121" stroke-width="2" x="1" y="1" width="288" height="99"></rect>
-            <g id="Lundbergs_logo_tagline_center_grey_vect" transform="translate(9.000000, 25.000000)">
+            <g id="Lundbergs_logo_tagline_center_grey_vect">
                 <polyline id="Fill-18" fill="#212121" points="22.1731714 50.0120106 0.297514286 50.0120106 0.297514286 0.303287234 7.58995714 0.303287234 7.58995714 42.9121596 22.1731714 42.9121596 22.1731714 50.0120106"></polyline>
                 <path d="M53.1664714,42.9121596 C53.1664714,44.8995319 52.4611286,46.5809043 51.0521143,47.9546489 C49.6414286,49.3283936 47.9165143,50.0120106 45.8740286,50.0120106 L34.9362,50.0120106 C32.8937143,50.0120106 31.1671286,49.3283936 29.7581143,47.9546489 C28.3474286,46.5809043 27.6437571,44.8995319 27.6437571,42.9121596 L27.6437571,0.303287234 L34.9362,0.303287234 L34.9362,42.9121596 L45.8740286,42.9121596 L45.8740286,0.303287234 L53.1664714,0.303287234 L53.1664714,42.9121596" id="Fill-19" fill="#212121"></path>
                 <polyline id="Fill-20" fill="#212121" points="85.1058 50.0120106 78.6891857 50.0120106 66.8755286 17.4897447 66.8755286 50.0120106 59.5830857 50.0120106 59.5830857 0.303287234 67.4588571 0.303287234 77.8133571 29.5604681 77.8133571 0.303287234 85.1058 0.303287234 85.1058 50.0120106"></polyline>
