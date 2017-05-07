@@ -1,250 +1,198 @@
 extends layout
 
 block content
-  body#no-id.layout-1(data-ga-category='', data-ga-label='')
-     // <![endif]
-     .skip
-       a(href='index.html#content-primary') Hoppa till inneh&aring;ll
-     | &#x9;&#x9;
-     div
-       .group.header.header-borderless(role='banner')
-         .group-inner
-           .logo-and-nav-main
-             a.logo(href='/', title='Gå till webbplatsens startsida')
-               img(src='images/i/logo.svg', alt='Sandvik Group')
-             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-             .nav-main(role='navigation', data-fetch-children-url='/api/navigation/')
-               ul
-                 li.selected(data-selected='')
-                   a(href='/') hem
-                 | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                 li(data-page-id='3212:sv')
-                   a(href='/login') Produkter
-                 | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                 li(data-page-id='3212:sv')
-                   a(href='/forgot') Service
-                 | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;              
-                 //li(data-page-id='41523:sv', data-has-children='')
-                   a(href='om-oss/vart-foretag/index.html') Om oss
-                 | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                 //li(data-page-id='28555:sv')
-                   a(href='kontakt/index.html') Kontakt
-           | &#x9;&#x9;&#x9;&#x9;&#x9;
-           .language
-             p
-               | Kontakt:
-               strong  info@lundbergsab.com
-             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-             //a.change-language-link(href='byt-land-och-sprak/index.html')
-               img(src='images/i/flags/24/se.png', alt='Sweden')
-               span.structural :
-               |  Byt land/spr&aring;k
-           | &#x9;&#x9;&#x9;&#x9;&#x9;
-           //form#search-form.search(role='search', action='sok/index.html', data-querycompletion-url='/api/autocomplete/')
-             label.structural(for='search') S&ouml;k
-             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-             input#search.search-field(type='search', name='q', placeholder='Sök')
-             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-             input.search-submit(type='submit', value='Sök')
-     | &#x9;&#x9;
-     div
-       .hero.hero-layout-1.hero-light
-         img(src='images/hero.png')
-         | &#x9;&#x9;&#x9;&#x9;
-         .hero-inner
-           .hero-content.text
-             .hero-content-inner
-               h2.heading-type-1
-                 | Svensktillverkade lösningar för 
-                 span  avfallshantering i generationer
-               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-               div
-                // p Vi hjälper dig med kostnadseffektiv miljönytta.
-               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-               //p
-                 a.text-button(href='nyheter-och-media/nyheter/2016/06/att-utvecklas-med-kunder-och-samhallen-i-en-foranderlig-varld/index.html')
-                   | L&auml;s artikeln
-     | &#x9;&#x9;
-     #main.cf.group
-       .group-inner
-         #content
-           #content-primary(role='main')
-             h1.structural Hem
-             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-             .grid
-               div(data-column-span='4')
-                 .grid
-                   .teaser.news-teaser(data-column-span='12')
-                     .teaser-heading
-                       h2
-                         | Vår Historia
-                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                     .teaser-content
-                       ul
-                         li
-                           span.date-category
-                             | 2016
-                             span.structural , 
-                             span Bolags förvärv
-                           | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                           p Habo Rostfria köper Lundbergsplåt
-                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                         li
-                           span.date-category
-                             | 2014
-                             span.structural , 
-                             span Bolags förvärv
-                           | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                           p Wastec köps upp av Habo Rostfria
-                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+  div
+    .group.header.header-borderless(role='banner')
+      .group-inner
+        .logo-and-nav-main
+          a.logo(href='/', title='Gå till webbplatsens startsida')
+            img(src='images/i/logo.svg', alt='Lundbergs AB')
+          .nav-main(role='navigation')
+            ul
+              li.selected(data-selected='')
+                a(href='/') hem
+              li(data-page-id)
+                a(href='/login') Produkter
+              li(data-page-id='3212:sv')
+                a(href='/forgot') Service        
+        .language
+          p
+            | Kontakt:
+            strong  info@lundbergsab.se
+          //a.change-language-link(href='byt-land-och-sprak/index.html')
+            img(src='images/i/flags/24/se.png', alt='Sweden')
+            span.structural :
+            |  Byt land/spr&aring;k
+  div
+    .hero.hero-layout-1.hero-light
+      img(src='images/hero.png')
+      .hero-inner
+        .hero-content.text
+          .hero-content-inner
+            h2.heading-type-1
+              | Svensktillverkade lösningar för 
+              span  avfallshantering i generationer
+            div
+              // p Vi hjälper dig med kostnadseffektiv miljönytta.
+              //p
+  #main.cf.group
+    .group-inner
+      #content
+        #content-primary(role='main')
+          h1.structural Hem
+          .grid
+            div(data-column-span='4')
+              .grid
+                .teaser.news-teaser(data-column-span='12')
+                  .teaser-heading
+                    h2
+                      | Vår Historia
+                  .teaser-content
+                    ul
+                      li
+                        span.date-category
+                          | 2016
+                          span.structural , 
+                          span Bolags förvärv
+                        p Habo Rostfria köper Lundbergsplåt
+                      li
+                        span.date-category
+                          | 2014
+                          span.structural , 
+                          span Bolags förvärv
+                        p Wastec köps upp av Habo Rostfria
+                      li
+                        span.date-category
+                          | 1993
+                          span.structural , 
+                          span Bildande av bolag
+                        p Wastec grundas i Blomstermåla
+                      li
+                        span.date-category
+                          | 1957
+                          span.structural , 
+                          span Bildande av bolag
+                        p Habo Rostfria AB grundas
+                      li
+                        span.date-category
+                          | 1896
+                          span.structural , 
+                          span Bildande av bolag
+                        p Det anrika Lundbergsplåt grundas
+                    //p
+                      a.button.button-color-2(href='nyheter-och-media/index.html')
+                        | Fler nyheter
 
-                         li
-                           span.date-category
-                             | 1993
-                             span.structural , 
-                             span Bildande av bolag
-                           | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                           p Wastec grundas i Blomstermåla
-                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                         li
-                           span.date-category
-                             | 1957
-                             span.structural , 
-                             span Bildande av bolag
-                           | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                           p Habo Rostfria AB grundas
-                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                         li
-                           span.date-category
-                             | 1896
-                             span.structural , 
-                             span Bildande av bolag
-                           | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                           p Det anrika Lundbergsplåt grundas
-                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                       //p
-                         a.button.button-color-2(href='nyheter-och-media/index.html')
-                           | Fler nyheter
-                   | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                   
-               div(data-column-span='8')
-                 .grid
-                   .teaser.teaser-floated-image(data-column-span='12')
-                     //.teaser-image
-                       img(alt='', src='images/filtered/54894/rszww290-90/meet-sandvik-2017-1-sve-1557116149-rszww290-90.jpg')
-                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                     .teaser-content.text
-                       .teaser-heading
-                         h2
-                           | Nytt namn samma människor
-                       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                       div
-                         p
-                           span Vi har i flera generationer jobbat med helhetslösningar och service för avfallsindustrin. 
-                           | Detta vill vi nu göra på en bredare plattform vilket  efter uppköp har resulterat  en större produktkatalog med mer kunskap och större utbud.
-                       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                       p
-                         //a.text-button(href='nyheter-och-media/tidning/index.html')
-                           | G&aring; till M&ouml;t Sandvik
-                   | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                   .teaser(data-column-span='6')
-                     .teaser-image
-                       img(src='images/filtered/18434/rszww880h495-90/products-services-puff-1504305859-rszww880h495-90.svg', alt='A wide range of products and services based on industry-leading technologies and extensive R&D.')
-                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                     .teaser-heading
-                       h2
-                         | Produkter
-                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                     .teaser-content.text
-                       div
-                         p
-                           | Vår breda produktkatalog ger dig allt du behöver för din avfallshantering. Kvalité är viktigt för oss därför hittar du bara de bästa produkterna inom komprimatorer, balpressar och avfallskvarnar.
-                       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                       p
-                         a.text-button(href='/login')
-                           | Se alla v&aring;ra produkter
-                   | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                   .teaser(data-column-span='6')
-                     .teaser-image
-                       img(src='images/filtered/42000/rszww880h495-90/vacancies_16_9--1193071630-rszww880h495-90.svg', alt='To continue to build a strong workforce we are constantly looking for the talents of today and tomorrow.')
+            div(data-column-span='8')
+              .grid
+                .teaser.teaser-floated-image(data-column-span='12')
+                  //.teaser-image
+                    img(alt='', src='images/filtered/54894/rszww290-90/meet-Lundbergs-2017-1-sve-1557116149-rszww290-90.jpg')
+                  .teaser-content.text
+                    .teaser-heading
+                      h2
+                        | Nytt namn samma människor
+                    div
+                      p
+                        span Vi har i flera generationer jobbat med helhetslösningar och service för avfallsindustrin. 
+                        | Detta vill vi nu göra på en bredare plattform vilket  efter uppköp har resulterat  en större produktkatalog med mer kunskap och större utbud.
+                    p
+                      //a.text-button(href='nyheter-och-media/tidning/index.html')
+                        | G&aring; till M&ouml;t Lundbergs
+                | 
+                .teaser(data-column-span='6')
+                  .teaser-image
+                    img(src='images/filtered/18434/rszww880h495-90/products-services-puff-1504305859-rszww880h495-90.svg', alt='A wide range of products and services based on industry-leading technologies and extensive R&D.')
 
-                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                     .teaser-heading
-                       h2
-                         | Service
-                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                     .teaser-content.text
-                       div
-                         p
-                           | Service för oss är viktigt, vi underhåller produkter för avfallshantering över hela Sverige. Kunskapen har hängt med oss i generationer vilket ger dig en flexibelt och kostnadseffektivt service.
-                       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                       p
-                         a.text-button(href='/login')
-                           | Se alla v&aring;ra tjänster
-                   | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                   //.teaser.teaser-floated-image(data-column-span='12')
-                     .teaser-image
-                       img(alt='', src='images/filtered/54163/rszww290-90/ar_2016_sve_web_200-1523198801-rszww290-90.png')
-                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                     //.teaser-content.text
-                       .teaser-heading
-                         h2
-                           | &angst;rsredovisning 2016
-                       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                       div
-                         p
-                           strong inklusive h&aring;llbarhetsrapport
-                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                         p
-                           | &quot;
-                           span
-                             | texy.
-                           | &quot;
-                       | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                       p
-                         a.text-button(href='http://www.annualreport.sandvik/se/2016/')
-                           | Knapp
-     | &#x9;&#x9;
-     .group.footer(role='contentinfo')
-       .group-inner
-         h2.structural Sidfot
-         | &#x9;&#x9;&#x9;&#x9;
-         .footer-left
-           img(src='images/i/logo.svg', alt='Lundbergs')
-           | &#x9;&#x9;&#x9;&#x9;&#x9;
-           .statement
-             //p
-               | Sandvik &auml;r en koncern inom 00- och 00, 00 och 00.
-           | &#x9;&#x9;&#x9;&#x9;&#x9;
-           .copyright
-             p Copyright &copy; Lundbergs AB;
-             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-             p Klingekärrsgatan 10, 566 31 Habo, Sverige
-             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-             p Tel 010-102 25 50
-         | &#x9;&#x9;&#x9;&#x9;
-         .footer-right
-           .nav-supp(role='navigation')
-             ul
-               li
-                 a(href='') Kontakt
-               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-               li
-                 a(href='') Besök oss
-           | &#x9;&#x9;&#x9;&#x9;&#x9;
-           .nav-social
-             h3.structural Hittas oss p&aring;:
-             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-             ul
-               //li.nav-social-facebook
-                 span
-                   a(href='https://www.facebook.com/sandvikkarriar') https://www.facebook.com/sandvikkarriar
-               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-               li.nav-social-linkedin
-                 span
-                   a(href='https://www.linkedin.com/company/sandvik') https://www.linkedin.com/company/sandvik
-           | &#x9;&#x9;&#x9;&#x9;&#x9;
-           //h3.structural Mera Sandvik
-           | &#x9;&#x9;&#x9;&#x9;&#x9;
-  
-          
+                  .teaser-heading
+                    h2
+                      | Produkter
+                  .teaser-content.text
+                    div
+                      p
+                        | Vår breda produktkatalog ger dig allt du behöver för din avfallshantering. Kvalité är viktigt för oss därför hittar du bara de bästa produkterna inom komprimatorer, balpressar och avfallskvarnar.
+                    p
+                      a.text-button(href='/login')
+                        | Se alla v&aring;ra produkter
+                | 
+                .teaser(data-column-span='6')
+                  .teaser-image
+                    img(src='images/filtered/42000/rszww880h495-90/vacancies_16_9--1193071630-rszww880h495-90.svg', alt='To continue to build a strong workforce we are constantly looking for the talents of today and tomorrow.')
+
+
+                  .teaser-heading
+                    h2
+                      | Service
+
+                  .teaser-content.text
+                    div
+                      p
+                        | Service för oss är viktigt, vi underhåller produkter för avfallshantering över hela Sverige. Kunskapen har hängt med oss i generationer vilket ger dig en flexibelt och kostnadseffektivt service.
+
+                    p
+                      a.text-button(href='/login')
+                        | Se alla v&aring;ra tjänster
+                | 
+                //.teaser.teaser-floated-image(data-column-span='12')
+                  .teaser-image
+                    img(alt='', src='images/filtered/54163/rszww290-90/ar_2016_sve_web_200-1523198801-rszww290-90.png')
+
+                  //.teaser-content.text
+                    .teaser-heading
+                      h2
+                        | &angst;rsredovisning 2016
+
+                    div
+                      p
+                        strong inklusive h&aring;llbarhetsrapport
+
+                      p
+                        | &quot;
+                        span
+                          | texy.
+                        | &quot;
+
+                    p
+                      a.text-button(href='')
+                        | Knapp
+  | 
+  .group.footer(role='contentinfo')
+    .group-inner
+      h2.structural Sidfot
+      | 
+      .footer-left
+        img(src='images/i/logo.svg', alt='Lundbergs')
+        | 
+        .statement
+          //p
+            | Lundbergs &auml;r en koncern inom 00- och 00, 00 och 00.
+        | 
+        .copyright
+          p Copyright &copy; Lundbergs AB
+          | 
+          p Klingekärrsgatan 10, 566 31 Habo, Sverige
+          | 
+          p Tel 010-102 25 50
+      | 
+      .footer-right
+        .nav-supp(role='navigation')
+          ul
+            li
+              a(href='') Kontakt
+            | 
+            li
+              a(href='') Besök oss
+        | 
+        .nav-social
+          h3.structural Hittas oss p&aring;:
+          | 
+          ul
+            //li.nav-social-facebook
+              span
+                a(href='')
+            | 
+            li.nav-social-linkedin
+              span
+                a(href='https://www.linkedin.com/company/lundbergsab') https://www.linkedin.com/company/lundbergsab
+        | 
+        //h3.structural Mera Lundbergs
