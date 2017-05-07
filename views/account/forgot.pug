@@ -2,62 +2,31 @@ extends ../layout
 
 block content
   div
-    .group.header.header-borderless(role='banner')
-      .group-inner
-        .logo-and-nav-main
-          a.logo(href='/', title='Gå till webbplatsens startsida')
-            img(src='images/i/logo.svg', alt='Sandvik Group')
-          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-          .nav-main(role='navigation', data-fetch-children-url='/api/navigation/')
-            ul
-              li.selected(data-selected='')
-                a(href='/') hem
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              li(data-page-id='3212:sv')
-                a(href='/login') Produkter
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              li(data-page-id='3212:sv')
-                a(href='/') Service
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;              
-              li(data-page-id='41523:sv', data-has-children='')
-                a(href='om-oss/vart-foretag/index.html') Om oss
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              li(data-page-id='28555:sv')
-                a(href='kontakt/index.html') Kontakt
-        | &#x9;&#x9;&#x9;&#x9;&#x9;
-        .language
-          p
-            | Kontakt:
-            strong  info@lundbergsab.com
-          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
     #main.cf.group
       .group-inner
         #content
-          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+
           .content-2
             #content-primary(role='main')
               .breadcrumbs(role='navigation')
                 strong Du &auml;r h&auml;r:
-                | &#x9;
-              | &#x9;
-              | &#x9;&#x9;
-              | &#x9;&#x9;
+                | 
               .article
                 h1.article-heading-h1 service och tjänster
-              | &#x9;&#x9;
-              | &#x9;&#x9;&#x9;
+              | 
+              | 
               .listing(data-collapsable='', data-init-collapsed='true')
                 .listing-header
-                | &#x9;&#x9;&#x9;&#x9;
+                | 
                 ol.grid.text.ordered-teasers
                   li(data-column-span='4')
                     .teaser
                       .teaser-content
-                        //img(alt='', src='../../filtered/51498/rszww273h165-90/how-carbide-inserts-are-made-by-sandvik-coromant-350x194-799286938-rszww273h165-90.jpg')
-                        | &#x9;&#x9;
+                        //img(alt='', src='../../filtered/51498/rszww273h165-90/how-carbide-inserts-are-made-by--coromant-350x194-799286938-rszww273h165-90.jpg')
+                        | 
                         p
                           p(href='') Sk&auml;r &ndash; analyserade ned till minsta atom
-                        | &#x9;&#x9;
+                        | 
                         //p.date-category
                           | 3 feb 2017
                           span.structural , 
@@ -66,10 +35,10 @@ block content
                     .teaser
                       .teaser-content
                         //img(src='../../filtered/51416/rszww273h165-90/top-center-drill-bit-880x480-114113183-rszww273h165-90.jpg', alt='Top center drill bit')
-                        | &#x9;&#x9;
+                        | 
                         p
                           p(href='') Moderna bergborrar hanterar tuffa kundutmaningar
-                        | &#x9;&#x9;
+                        | 
                         //p.date-category
                           | 30 jan 2017
                           span.structural , 
@@ -77,764 +46,66 @@ block content
                   li(data-column-span='4')
                     .teaser
                       .teaser-content
-                        //img(alt='', src='../../filtered/51592/rszww273h165-90/sandvik-och-tekniska-museet_358x--786245867-rszww273h165-90.jpg')
-                        | &#x9;&#x9;
+                        //img(alt='', src='../../filtered/51592/rszww273h165-90/-och-tekniska-museet_358x--786245867-rszww273h165-90.jpg')
+                        | 
                         p
-                          p(href='') Sandvik och Tekniska museet g&ouml;r gemensam insats f&ouml;r teknikintresset i framtiden
-                        | &#x9;&#x9;
+                          p(href='')  och Tekniska museet g&ouml;r gemensam insats f&ouml;r teknikintresset i framtiden
+                        | 
                         p.date-category
                           | 6 feb 2017
                           span.structural , 
                           span Pressmeddelande
-              | &#x9;&#x9;
-              | &#x9;&#x9;
-              | &#x9;&#x9;
-              | &#x9;&#x9;&#x9;
+              | 
+              | 
+              | 
+              | 
               .tabbed-module
                 #all.tab-content.text
                   h2.tab-heading Tjänster
                   |     
                   |     
-                  | &#x9;
-                  | &#x9;&#x9;&#x9;&#x9;
+                  | 
+                  | 
                   .news
                     .teaser
                       .teaser-heading.teaser-heading-lowercase
                         h2
                           a(href='nyheter/2017/04/sakerhet-i-fokus-alla-dagar/index.html') S&auml;kerhet i fokus &ndash; alla dagar
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+
+
                       .teaser-content
                         span.date-category
                           | 28 apr 2017
                           span.structural , 
                           span Nyhet
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+
                         p
-                          | Idag uppm&auml;rksammas V&auml;rldss&auml;kerhetsdagen, World Day for Safety and Health at Work &ouml;ver hela v&auml;rlden. H&auml;lsa och s&auml;kerhet p&aring; arbetsplatsen har h&ouml;gsta prioritet p&aring; Sandvik vilket bland annat resulterat i att vi har minskat olycksfrekvensen (LTIFR) sju &aring;r i rad till en historiskt l&aring;g niv&aring;.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    //.teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/sandviks-arsstamma-2017/index.html') Sandviks &aring;rsst&auml;mma 2017
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 27 apr 2017
-                          span.structural , 
-                          span Pressmeddelande
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p Sandvik AB h&ouml;ll den 27 april 2017 &aring;rsst&auml;mma i Sandviken.
-                        p
-                          a(href='https://sandvik-live.creo.se/agm-2017/se') Se en inspelning av koncernchef Bj&ouml;rn Rosengrens presentation
-                  //  | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/paradigm-shift-in-thermal-technology-awarded-the-wilhelm-haglund-medal/index.html') Paradigmskifte inom v&auml;rmeteknologi bel&ouml;nas med Wilhelm Haglund-medaljen
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(alt='', src='../../filtered/54994/rszww290h180-90/haglund2017-880x480--11194114-rszww290h180-90.jpg')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 27 apr 2017
-                          span.structural , 
-                          span Nyhet
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Team fr&aring;n aff&auml;rsomr&aring;de Sandvik Materials Technology tilldelades &rdquo;Wilhelm Haglund-medaljen till &aring;rets produktutvecklare&rdquo; 2017 f&ouml;r utvecklingen av material som klarar extremt h&ouml;ga temperaturer.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/smarta-pulverlosningar-bidrar-till-mindre-utslapp-till-havs/index.html') Smarta pulverl&ouml;sningar bidrar till mindre utsl&auml;pp till havs
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(src='../../filtered/54969/rszww290h180-90/valve_spindle_880x480-1591865476-rszww290h180-90.jpg', alt='Tomas Berglund and Martin Östlund ')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 26 apr 2017
-                          span.structural , 
-                          span Artikel
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Sandvik och MAN Diesel &amp; Turbo i samarbete kring kritisk komponent f&ouml;r ny typ av marin motor som minskar utsl&auml;ppen fr&aring;n stora lastfartyg.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/delarsrapport-forsta-kvartalet-2017/index.html') Del&aring;rsrapport f&ouml;rsta kvartalet 2017
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 24 apr 2017
-                          span.structural , 
-                          span Pressmeddelande
-                          |                                 
-                          span Regelstyrt
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          a.file.pdf(href='../../globalassets/4.-investors/1.-investerare-swe/delarsrapporter/2017/delarsrapport-2017-1.pdf') L&auml;s hela rapporten&nbsp;(PDF-dokument, 310 kB)
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/vi-maste-gora-det-dar-lilla-extra/index.html') &ldquo;Vi m&aring;ste g&ouml;ra det d&auml;r lilla extra&rdquo;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(src='../../filtered/54901/rszww290h180-90/web_sandra_pascuti_440x220-1--1223031296-rszww290h180-90.jpg', alt='Sandvik Pascuti')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 19 apr 2017
-                          span.structural , 
-                          span Artikel
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | M&ouml;t Sandviks Sandra Pascuti, Human Resource Business Partner f&ouml;r Latinamerika, som har en erk&auml;nt stark ledarskapsf&ouml;rm&aring;ga i sv&aring;ra situationer och f&ouml;rm&aring;ga att kommunicera med b&aring;de hj&auml;rta och hj&auml;rna.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/sandvik-materials-technology-vinner-stororder-for-gasfaltet-leviathan/index.html') Sandvik Materials Technology vinner stororder f&ouml;r gasf&auml;ltet Leviathan
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 11 apr 2017
-                          span.structural , 
-                          span Pressmeddelande
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Aff&auml;rsomr&aring;de Sandvik Materials Technology har s&auml;krat ett kontrakt som ensam leverant&ouml;r av s&ouml;ml&ouml;sa r&ouml;r i rostfritt st&aring;l till gasf&auml;ltet Leviathan i Medelhavet, utanf&ouml;r Israel.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/sandvik-team-redefines-turning/index.html') Sandvik-team omdefinierar svarvning
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(alt='', src='../../filtered/54461/rszww290h180-90/primeturning--1777282705-rszww290h180-90.png')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 10 apr 2017
-                          span.structural , 
-                          span Nyhet
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Den nya svarvningsmetoden PrimeTurning&trade; &auml;r en innovation med potential att omdefiniera svarvningskonsten.
-                //#news.tab-content.text
-                  h2.tab-heading Nyheter
-                  |     
-                  |     
-                  | &#x9;
-                  | &#x9;&#x9;&#x9;&#x9;
-                  .news
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/sakerhet-i-fokus-alla-dagar/index.html') S&auml;kerhet i fokus &ndash; alla dagar
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 28 apr 2017
-                          span.structural , 
-                          span Nyhet
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Idag uppm&auml;rksammas V&auml;rldss&auml;kerhetsdagen, World Day for Safety and Health at Work &ouml;ver hela v&auml;rlden. H&auml;lsa och s&auml;kerhet p&aring; arbetsplatsen har h&ouml;gsta prioritet p&aring; Sandvik vilket bland annat resulterat i att vi har minskat olycksfrekvensen (LTIFR) sju &aring;r i rad till en historiskt l&aring;g niv&aring;.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/paradigm-shift-in-thermal-technology-awarded-the-wilhelm-haglund-medal/index.html') Paradigmskifte inom v&auml;rmeteknologi bel&ouml;nas med Wilhelm Haglund-medaljen
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(alt='', src='../../filtered/54994/rszww290h180-90/haglund2017-880x480--11194114-rszww290h180-90.jpg')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 27 apr 2017
-                          span.structural , 
-                          span Nyhet
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Team fr&aring;n aff&auml;rsomr&aring;de Sandvik Materials Technology tilldelades &rdquo;Wilhelm Haglund-medaljen till &aring;rets produktutvecklare&rdquo; 2017 f&ouml;r utvecklingen av material som klarar extremt h&ouml;ga temperaturer.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/sandvik-team-redefines-turning/index.html') Sandvik-team omdefinierar svarvning
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(alt='', src='../../filtered/54461/rszww290h180-90/primeturning--1777282705-rszww290h180-90.png')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 10 apr 2017
-                          span.structural , 
-                          span Nyhet
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Den nya svarvningsmetoden PrimeTurning&trade; &auml;r en innovation med potential att omdefiniera svarvningskonsten.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/03/sandvik-visade-framtidens-utrustning-pa-conexpo-conagg/index.html') Sandvik visade framtidens utrustning p&aring; CONEXPO-CON/AGG
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(src='../../filtered/51967/rszww290h180-90/sandvik_cs550_880x480--450423549-rszww290h180-90.jpg', alt='Sandvik CS550 cone crusher')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 14 mar 2017
-                          span.structural , 
-                          span Nyhet
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Sandvik visade upp ny, innovativ utrustning inom gruv- och anl&auml;ggningsindustrin p&aring; CONEXPO-CON/AGG i Las Vegas, f&ouml;rra veckan.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/03/sandvik-och-ibm-i-samarbete-om-framtidens-analyslosningar-till-gruvindustrin/index.html') Sandvik och IBM i samarbete om framtidens analysl&ouml;sningar till gruvindustrin
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 10 mar 2017
-                          span.structural , 
-                          span Nyhet
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Sandvik Mining and Rock Technology har ing&aring;tt en &ouml;verenskommelse med IBM f&ouml;r att gemensamt utveckla marknadsledande l&ouml;sningar inom omr&aring;dena datadriven produktivitet och f&ouml;rebyggande underh&aring;ll f&ouml;r gruv- och bergbrytningsindustrin.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/02/sandviks-utsikter-andrade-till-positiva-av-standard-poors-global-ratings/index.html') Sandviks utsikter &auml;ndrade till positiva av Standard &amp; Poor&apos;s global ratings
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 16 feb 2017
-                          span.structural , 
-                          span Nyhet
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Den 16 februari 2017 h&ouml;jde Standard &amp; Poor&rsquo;s Global Ratings sina utsikter f&ouml;r Sandvik AB till positiva fr&aring;n negativa och bekr&auml;ftade sin BBB kreditrating av Sandvik.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/01/sandvik-reconfirmed-as-one-of-the-worlds-most-sustainable-companies/index.html') Sandvik har &aring;ter bekr&auml;ftats som ett av v&auml;rldens h&aring;llbaraste f&ouml;retag
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 25 jan 2017
-                          span.structural , 
-                          span Nyhet
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Sandvik har &aring;ter bekr&auml;ftats som medlem av det prestigefyllda h&aring;llbarhetsindexet FTSE4Good Index Series och &auml;r f&ouml;r &aring;ttonde &aring;ret i rad &auml;ven inkluderat i RobecoSAMs &rdquo;The Sustainability Yearbook&rdquo;.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/01/nytt-produktomrade-inom-sandvik-machining-solutions/index.html') Nytt produktomr&aring;de inom Sandvik Machining Solutions
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 23 dec 2016
-                          span.structural , 
-                          span Nyhet
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Fr&aring;n den 1 januari 2017 bildas produktomr&aring;det Additive Manufacturing inom Sandvik Machining Solutions.
-                //#pressreleases.tab-content.text
-                  h2.tab-heading Pressmeddelanden
-                  |     
-                  |             
-                  form(method='post', action='index.html#pressreleases', data-autosubmit='true')
-                    .row
-                      .col
-                        .radio.alt
-                          input#f-pressreleases-all.radio(type='radio', name='f-pressreleases', checked='checked', value='all')
-                          |                             
-                          label(for='f-pressreleases-all') Alla pressmeddelanden
-                        |                     
-                        |         
-                        |                         
-                        .radio.alt
-                          input#f-pressreleases-regulatory.radio(type='radio', name='f-pressreleases', value='regulatory')
-                          |                             
-                          label(for='f-pressreleases-regulatory') Regelstyrda pressmeddelanden
-                    |                 
-                    .row.js-structural
-                      .col
-                        input.button(type='submit', value='Filtrera')
-                    |                 
-                    .legal-text
-                      p
-                        | H&auml;r listas alla pressmeddelanden utf&auml;rdade av Sandvik AB. F&ouml;r att endast se pressmeddelanden som har offentliggjorts enligt lag eller andra regelverk, v&auml;lj &quot;Regelstyrda pressmeddelanden&quot; . (G&auml;ller pressmeddelanden som har publicerats efter 3 juli 2016)
-                    |                 
-                    hr(aria-hidden='true')
-                  |         
-                  |     
-                  | &#x9;
-                  | &#x9;&#x9;&#x9;&#x9;
-                  .news
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/sandviks-arsstamma-2017/index.html') Sandviks &aring;rsst&auml;mma 2017
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 27 apr 2017
-                          span.structural , 
-                          span Pressmeddelande
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p Sandvik AB h&ouml;ll den 27 april 2017 &aring;rsst&auml;mma i Sandviken.
-                        p
-                          a(href='https://sandvik-live.creo.se/agm-2017/se') Se en inspelning av koncernchef Bj&ouml;rn Rosengrens presentation
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/delarsrapport-forsta-kvartalet-2017/index.html') Del&aring;rsrapport f&ouml;rsta kvartalet 2017
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 24 apr 2017
-                          span.structural , 
-                          span Pressmeddelande
-                          |                                 
-                          span Regelstyrt
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          a.file.pdf(href='../../globalassets/4.-investors/1.-investerare-swe/delarsrapporter/2017/delarsrapport-2017-1.pdf') L&auml;s hela rapporten&nbsp;(PDF-dokument, 310 kB)
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/sandvik-materials-technology-vinner-stororder-for-gasfaltet-leviathan/index.html') Sandvik Materials Technology vinner stororder f&ouml;r gasf&auml;ltet Leviathan
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 11 apr 2017
-                          span.structural , 
-                          span Pressmeddelande
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Aff&auml;rsomr&aring;de Sandvik Materials Technology har s&auml;krat ett kontrakt som ensam leverant&ouml;r av s&ouml;ml&ouml;sa r&ouml;r i rostfritt st&aring;l till gasf&auml;ltet Leviathan i Medelhavet, utanf&ouml;r Israel.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/inbjudan-presentation-av-sandviks-rapport-for-forsta-kvartalet-2017/index.html') Inbjudan &ndash; presentation av Sandviks rapport f&ouml;r f&ouml;rsta kvartalet 2017
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 5 apr 2017
-                          span.structural , 
-                          span Pressmeddelande
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/03/arsstamma-i-sandvik-aktiebolag/index.html') &angst;rsst&auml;mma i Sandvik Aktiebolag
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 21 mar 2017
-                          span.structural , 
-                          span Pressmeddelande
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Aktie&auml;garna i Sandvik Aktiebolag kallas till &aring;rsst&auml;mma torsdagen den 27 april 2017 kl.17.00 p&aring; G&ouml;ransson Arena, S&auml;tragatan 21, Sandviken.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/03/sandvik-ab-arsredovisning-2016/index.html') Sandvik AB &angst;rsredovisning 2016
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 20 mar 2017
-                          span.structural , 
-                          span Pressmeddelande
-                          |                                 
-                          span Regelstyrt
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Sandvik AB:s &aring;rsredovisning 2016, inklusive h&aring;llbarhetsrapport, finns fr&aring;n och med idag tillg&auml;nglig p&aring; v&aring;r webbplats home.sandvik.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/03/sandvik-utser-ny-affarsomradeschef-for-sandvik-machining-solutions/index.html') Sandvik utser ny aff&auml;rsomr&aring;deschef f&ouml;r Sandvik Machining Solutions
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 15 mar 2017
-                          span.structural , 
-                          span Pressmeddelande
-                          |                                 
-                          span Regelstyrt
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Klas Forsstr&ouml;m har utsetts till ny chef f&ouml;r Sandviks aff&auml;rsomr&aring;de Sandvik Machining Solutions och medlem av koncernledningen.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/02/sandviks-kapitalmarknadsdag-2017/index.html') Sandviks kapitalmarknadsdag 2017
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 24 feb 2017
-                          span.structural , 
-                          span Pressmeddelande
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Den 21 november 2017 kommer Sandvik att h&aring;lla kapitalmarknadsdag p&aring; Walter AG:s, ett varum&auml;rke inom Sandvik Machining Solutions, huvudkontor i T&uuml;bingen, Tyskland.
-                //#stories.tab-content.text
-                  h2.tab-heading Artiklar
-                  |     
-                  |     
-                  | &#x9;
-                  | &#x9;&#x9;&#x9;&#x9;
-                  .news
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/smarta-pulverlosningar-bidrar-till-mindre-utslapp-till-havs/index.html') Smarta pulverl&ouml;sningar bidrar till mindre utsl&auml;pp till havs
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(src='../../filtered/54969/rszww290h180-90/valve_spindle_880x480-1591865476-rszww290h180-90.jpg', alt='Tomas Berglund and Martin Östlund ')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 26 apr 2017
-                          span.structural , 
-                          span Artikel
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Sandvik och MAN Diesel &amp; Turbo i samarbete kring kritisk komponent f&ouml;r ny typ av marin motor som minskar utsl&auml;ppen fr&aring;n stora lastfartyg.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/vi-maste-gora-det-dar-lilla-extra/index.html') &ldquo;Vi m&aring;ste g&ouml;ra det d&auml;r lilla extra&rdquo;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(src='../../filtered/54901/rszww290h180-90/web_sandra_pascuti_440x220-1--1223031296-rszww290h180-90.jpg', alt='Sandvik Pascuti')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 19 apr 2017
-                          span.structural , 
-                          span Artikel
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | M&ouml;t Sandviks Sandra Pascuti, Human Resource Business Partner f&ouml;r Latinamerika, som har en erk&auml;nt stark ledarskapsf&ouml;rm&aring;ga i sv&aring;ra situationer och f&ouml;rm&aring;ga att kommunicera med b&aring;de hj&auml;rta och hj&auml;rna.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/sandvik-vill-oka-intresset-for-teknik-bland-unga-idag-startar-youtubeserien-man-vs.-machine/index.html')
-                            | Sandvik vill &ouml;ka intresset f&ouml;r teknik bland unga - idag startar &rdquo;Man vs. Machine&rdquo;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(alt='', src='../../filtered/54464/rszww290h180-90/man-vs-machine_880x480--2073311376-rszww290h180-90.jpg')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 7 apr 2017
-                          span.structural , 
-                          span Artikel
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Sandvik arbetar aktivt f&ouml;r att &ouml;ka intresset f&ouml;r teknik bland unga. Tillsammans med Splay har Sandvik som f&ouml;rsta bolag inom teknik och tillverkningsindustri producerat YouTube-programserien Man vs. Machine d&auml;r k&auml;nda YouTube-profiler t&auml;vlar i olika utmaningar mot maskiner
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/04/sandvik-prepasandvik-valkomnar-okad-forsaljning-av-programvarutjanster/index.html') Sandvik rustar f&ouml;r &ouml;kad f&ouml;rs&auml;ljning av programvarutj&auml;nster
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(alt='', src='../../filtered/54202/rszww290h180-90/coroplus_computer_880x480--1208802150-rszww290h180-90.jpg')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 3 apr 2017
-                          span.structural , 
-                          span Artikel
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Programvarutj&auml;nster inom metallsektorn v&auml;ntas fyrdubblas till 2025, vilket inneb&auml;r att aff&auml;rspotentialen f&ouml;r programvaror &auml;r lika stor som f&ouml;r verktyg. Detta &auml;r goda nyheter f&ouml;r Sandvik, som &auml;r bland de f&ouml;rsta att introducera en serie uppkopplade verktyg p&aring; marknaden.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/03/insatser-for-okad-jamstalldhet-och-mangfald/index.html') Insatser f&ouml;r &ouml;kad j&auml;mst&auml;lldhet och m&aring;ngfald
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 31 mar 2017
-                          span.structural , 
-                          span Artikel
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | V&auml;gen till fler kvinnor p&aring; ledande positioner i tekniktunga branscher b&ouml;rjar redan i tidig skol&aring;lder, men handlar ocks&aring; om att lyfta kvinnliga f&ouml;rebilder. S&aring; g&aring;r tong&aring;ngarna p&aring; Sandvik, som arbetar brett b&aring;de f&ouml;r att &ouml;ka intresset f&ouml;r teknik och f&ouml;r att locka fler kvinnor.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/03/general-electric-anammar-entreprenorsandan/index.html') General Electric anammar entrepren&ouml;rsandan
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(alt='', src='../../filtered/54158/rszww290h180-90/ge-article-880x480-441503580-rszww290h180-90.jpg')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 29 mar 2017
-                          span.structural , 
-                          span Artikel
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Sandvik sneglar alltid p&aring; andra framg&aring;ngsrika f&ouml;retag f&ouml;r att f&aring; inspiration och ta l&auml;rdom. Ett exempel &auml;r General Electric, kund till Sandvik och industrij&auml;tte som hittat ett s&auml;tt att anpassa nyf&ouml;retagarandan till sina utvecklingsprocesser och sitt arbetss&auml;tt
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/03/barn-satter-ribban-for-framtidens-ventilstal-till-kompressorer/index.html') Barn s&auml;tter ribban f&ouml;r framtidens ventilst&aring;l till kompressorer
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(alt='', src='../../filtered/52215/rszww290h180-90/fridge-of-the-future880x480-543365064-rszww290h180-90.jpg')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 15 mar 2017
-                          span.structural , 
-                          span Artikel
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Drivna att utveckla n&auml;sta generations ventilst&aring;l till kompressorer har Sandvik involverat b&aring;de skolbarn och forskare hos den globala vitvarutillverkaren Electrolux f&ouml;r att lyssna till deras visioner f&ouml;r framtiden.
-                    | &#x9;&#x9;
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;
-                    .teaser.teaser-floated-image
-                      .teaser-heading.teaser-heading-lowercase
-                        h2
-                          a(href='nyheter/2017/03/vi-firar-vara-fantastiska-medarbetare-och-deras-nyckelkompetenser/index.html') Vi firar v&aring;ra fantastiska medarbetare och deras nyckelkompetenser
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-image
-                        img(alt='', src='../../filtered/51926/rszww290h180-90/belinda-oakes880x480--1877802165-rszww290h180-90.jpg')
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .teaser-content
-                        span.date-category
-                          | 8 mar 2017
-                          span.structural , 
-                          span Artikel
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                        p
-                          | Idag firar vi internationella kvinnodagen genom att uppm&auml;rksamma flera viktiga kompetenser inom v&aring;rt f&ouml;retag, medarbetare som bidrar till v&aring;ra kunders framg&aring;ngar och v&aring;rt f&ouml;retags utveckling.
-                p
-                  //a.button(href='nyheter/index.html')
-                    //| Nyhetsarkiv
-              | &#x9;&#x9;
-              | &#x9;&#x9;
-              //.grid
-                .twitter-teaser(data-column-span='12')
-                  h2 Sandvik p&aring; Twitter
-                  | &#x9;&#x9;
-                  .grid
-                    div(data-column-span='6')
-                      .tweet
-                        .tweet-header
-                          a(href='https://twitter.com/SandvikSverige')
-                            img.tweet-avatar(src='https://pbs.twimg.com/profile_images/665151001368928256/e3v-q9d0_normal.png', alt='Sandvik Sverige')
-                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                            span.tweet-name Sandvik Sverige
-                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                            span.tweet-username @SandvikSverige
-                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                          p.tweet-timestamp
-                            span.structural Postad: 
-                            | 3d sedan
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;
-                        .tweet-content
-                          p
-                            | S&aring; h&auml;r gjorde Stora Enso i Skutsk&auml;r n&auml;r de skulle v&auml;lja material till nytt ledningssystem f&ouml;r korrosiva svavelgaser&mldr; 
-                            a(href='https://twitter.com/i/web/status/857707930153500672') twitter.com/i/web/status/8&mldr;
-                    | &#x9;
-                    | &#x9;&#x9;&#x9;
-                    div(data-column-span='6')
-                      .tweet
-                        .tweet-header
-                          a(href='https://twitter.com/SandvikSverige')
-                            img.tweet-avatar(src='https://pbs.twimg.com/profile_images/665151001368928256/e3v-q9d0_normal.png', alt='Sandvik Sverige')
-                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                            span.tweet-name Sandvik Sverige
-                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                            span.tweet-username @SandvikSverige
-                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                          p.tweet-timestamp
-                            span.structural Postad: 
-                            | 3d sedan
-                        | &#x9;&#x9;&#x9;&#x9;&#x9;
-                        .tweet-content
-                          p
-                            | RT 
-                            a(href='http://twitter.com/PetraEinarsson') @PetraEinarsson
-                            | : Paradigmskifte inom v&auml;rmeteknologi bel&ouml;nas med Wilhelm Haglund-medaljen 
-                            a(href='nyheter/2017/04/paradigm-shift-in-thermal-technology-awarded-the-wilhelm-haglund-medal/index.html') home.sandvik/se/nyheter-och&mldr;
-                            |  
-                            a(href='http://twitter.com/hashtag/sandvik?src=hash') #sandvik
-                            |  
-                            a(href='http://twitter.com/hashtag/smt?src=hash') #smt
-                            |  
-                            a(href='http://twitter.com/hashtag/apm?src=hash') #apm
-                            |  #apm&mldr;
-                  | &#x9;&#x9;
-                  p
-                    a.button.button-color-2(href='https://twitter.com/SandvikSverige')
-                      | F&ouml;lj oss
-    | &#x9;&#x9;
-    | &#x9;&#x9;
-    | &#x9;&#x9;&#x9;
+                          | Idag uppm&auml;rksammas V&auml;rldss&auml;kerhetsdagen, World Day for Safety and Health at Work &ouml;ver hela v&auml;rlden. H&auml;lsa och s&auml;kerhet p&aring; arbetsplatsen har h&ouml;gsta prioritet p&aring;  vilket bland annat resulterat i att vi har minskat olycksfrekvensen (LTIFR) sju &aring;r i rad till en historiskt l&aring;g niv&aring;.
+    | 
     .group.article-info
       .group-inner
         .content-2
           .page-actions
             .page-actions-contact
               h2 Vill du veta mer?
-              | &#x9;
+              | 
               ul
                 li.page-action-email-us
                   a.open-in-dialog.open-email-dialog(href='') Mejla oss
-            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            | 
             .page-actions-share
               h2 Dela med andra
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+
               ul
                 //li.page-action-facebook
-                  a(target='_blank', href='https://www.facebook.com/sharer/sharer.php?u=http://www.home.sandvik/se/nyheter-och-media/') Facebook
-                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  a(target='_blank', href='https://www.facebook.com/sharer/sharer.php?u=http://www.home./se/nyheter-och-media/') Facebook
+
                 li.page-action-linkedin
-                  a(target='_blank', href='https://www.linkedin.com/shareArticle?url=http://www.home.sandvik/se/nyheter-och-media/&title=Nyheter+%26+media&summary=&mini=true') LinkedIn
-                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  a(target='_blank', href='https://www.linkedin.com/shareArticle?url=http://www.home./se/nyheter-och-media/&title=Nyheter+%26+media&summary=&mini=true') LinkedIn
+
                 //li.page-action-email
-                  a(target='_blank', href='mailto:?subject=Lundberg& media&body=http://www.home.sandvik/se/nyheter-och-media/') Epost
-          | &#x9;&#x9;&#x9;&#x9;
-          | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  a(target='_blank', href='mailto:?subject=Lundberg& media&body=http://www.home./se/nyheter-och-media/') Epost
+          | 
+          | 
           .send-feedback
             //a.send-feedback-link(href='index-show=send-feedback.html#send-feedback') Skicka kommentar p&aring; denna sida
-    | &#x9;&#x9;
-    | &#x9;&#x9;
-    | &#x9;&#x9;
-    | &#x9;&#x9;
-    | &#x9;&#x9;
-    |             
-    .group.footer.footer-polygon(role='contentinfo')
-      .group-inner
-        h2.structural Sidfot
-        | &#x9;&#x9;
-        .footer-left
-          img(src='images/i/logo.svg', alt='Lundbergs')
-          | &#x9;&#x9;&#x9;
-          .statement
-            //p
-              | Sandvik &auml;r en verkstadskoncern inom gruv- och bergbrytning, metallbearbetning och materialteknik.
-          | &#x9;&#x9;&#x9;
-          .copyright
-            p Copyright &copy; Lundbergs AB;
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-            p Klingekärrsgatan 10, 566 31 Habo, Sverige
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-            p Tel 010-102 25 50
-        | &#x9;&#x9;
-        .footer-right
-          .nav-supp(role='navigation')
-            ul
-              li
-                a(href='') Kontakt
-              li
-                a(href='') Besök oss
-          | &#x9;&#x9;&#x9;
-          .nav-social
-            h3.structural Hittas oss p&aring;:
-            | &#x9;&#x9;&#x9;&#x9;
-            ul
-              //li.nav-social-facebook
-                span
-                  a(href='https://www.facebook.com/sandvikkarriar') https://www.facebook.com/sandvikkarriar
-              | &#x9;&#x9;&#x9;&#x9;&#x9;
-              //li.nav-social-twitter
-                span
-                  a(href='https://twitter.com/Sandviksverige') https://twitter.com/Sandviksverige
-              | &#x9;&#x9;&#x9;&#x9;&#x9;
-              //li.nav-social-instagram
-                span
-                  a(href='https://instagram.com/sandvikgroup/') https://instagram.com/sandvikgroup/
-              | &#x9;&#x9;&#x9;&#x9;&#x9;
-              //li.nav-social-youtube
-                span
-                  a(href='https://www.youtube.com/user/sandvik') https://www.youtube.com/user/sandvik
-              | &#x9;&#x9;&#x9;&#x9;&#x9;
-              li.nav-social-linkedin
-                span
-                  a(href='https://www.linkedin.com/company/sandvik') https://www.linkedin.com/company/sandvik
-          | &#x9;&#x9;&#x9;
-          h3.structural Mera Sandvik
-          | &#x9;&#x9;&#x9;
-          div
-            //a.change-website(href='../andra-sandvik-webbplatser/index.html')
-              | Andra Sandvik-webbplatser
-                
