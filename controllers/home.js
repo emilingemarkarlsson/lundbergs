@@ -12,3 +12,8 @@ exports.produkter = (req, res) => {
     title: 'produkter'
   });
 };
+exports.produktemil = (req, res) => {
+  res.render('produktemil', {
+    title: 'produktemil'
+  });
+};
