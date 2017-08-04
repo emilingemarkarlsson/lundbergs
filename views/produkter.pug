@@ -1,25 +1,121 @@
 extends layout
 
 block content
-  .page-header
-    h3 Contact Form
 
-  form.form-horizontal(method='POST')
-    input(type='hidden', name='_csrf', value=_csrf)
-    .form-group
-      label(class='col-sm-2 control-label', for='name') Name
-      .col-sm-8
-        input.form-control(type='text', name='name', id='name', autofocus=true)
-    .form-group
-      label(class='col-sm-2 control-label', for='email') Email
-      .col-sm-8
-        input.form-control(type='text', name='email', id='email')
-    .form-group
-      label(class='col-sm-2 control-label', for='message') Body
-      .col-sm-8
-        textarea.form-control(name='message', id='message', rows='7')
-    .form-group
-      .col-sm-offset-2.col-sm-8
-        button.btn.btn-primary(type='submit')
-          i.fa.fa-envelope
-          | Send
+  #main.cf.group
+    .group-inner
+      #content
+        .breadcrumbs(role='navigation')
+          strong Du &auml;r h&auml;r:
+          | 
+        | 
+        | 
+        | 
+        #content-primary(role='main')
+          .article.text
+            h1 Produkter
+            | 
+            .intro
+              //p
+                | Lundbergss produkter &ouml;kar kundproduktiviteten samt bidrar till s&auml;krare arbetsmilj&ouml; och minskad milj&ouml;p&aring;verkan. G&aring; till v&aring;ra 
+                a(href='../om-oss/industrierbjudanden/index.html') industrierbjudanden
+                |  f&ouml;r att l&auml;sa mer.
+          | 
+          .tabbed-module
+            #tab-categories.tab-content.tab-active
+              h2.tab-heading 
+              | 
+              .exp-sections.exp-sections-product-cats
+                .exp-section.collapsed
+                  h2
+                    img(alt='', src='../../filtered/51370/rszww100h100-90/productsmetalcutting123x123-1123724921-rszww100h100-90.jpg')
+                    | Vakumsytem och Avfallskvarnar
+                  | 
+                  a.exp-sections-product-cat-link(href='')
+                    | Till webbplatsen
+                  | 
+                  .exp-section-content
+                    .grid
+                      .teaser.teaser-floated-image(data-column-span='6')
+                        .teaser-image
+                          img(alt='', src='../../filtered/48227/rszww120h120-90/drilling200x200--526827883-rszww120h120-90.jpg')
+                        .teaser-content
+                          .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                            h3
+                              a(href='')
+                                | Inkastbänk med kvarn
+                      .teaser.teaser-floated-image(data-column-span='6')
+                        .teaser-image
+                          img(alt='', src='../../filtered/48228/rszww120h120-90/reaming200x200--482023211-rszww120h120-90.jpg')
+                        .teaser-content
+                          .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                            h3
+                              a(href='')
+                                | Vaccumsystem med lagringstank
+                      .teaser.teaser-floated-image(data-column-span='6')
+                        .teaser-image
+                          img(alt='', src='../../filtered/48222/rszww120h120-90/milling200x200--83644012-rszww120h120-90.jpg')
+                        .teaser-content
+                          .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                            h3
+                              a(href='')
+                                | Anpassat till mindre verksamheter
+
+                .exp-section.collapsed
+                  h2
+                    img(alt='', src='../../filtered/2202/rszww100h100-90/mining-and-construction--1341895692-rszww100h100-90.jpg')
+                    | Komprimatorer och Balpressar
+                  | 
+                  a.exp-sections-product-cat-link(href='')
+                    | Till webbplatsen
+                  | 
+                  .exp-section-content
+                    .grid
+                      .teaser.teaser-floated-image(data-column-span='6')
+                        .teaser-image
+                          img(alt='', src='../../filtered/37824/rszww120h120-90/breaker--922842334-rszww120h120-90.jpg')
+                        .teaser-content
+                          .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                            h3
+                              a(href='http://mining.Lundbergs.com/en/products/equipment/crushing-and-screening/breaker-boom-systems-and-hydraulic-breakers')
+                                | Stationära
+                      .teaser.teaser-floated-image(data-column-span='6')
+                        .teaser-image
+                          img(alt='', src='../../filtered/37871/rszww120h120-90/bulkmaterials200x200-1196313246-rszww120h120-90.jpg')
+                        .teaser-content
+                          .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                            h3
+                              a(href='')
+                                | Mobila
+                      .teaser.teaser-floated-image(data-column-span='6')
+                        .teaser-image
+                          img(alt='', src='../../filtered/37875/rszww120h120-90/cone-crushers200x200-1351841072-rszww120h120-90.jpg')
+                        .teaser-content
+                          .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                            h3
+                              a(href='')
+                                | Våta avfall
+                      .teaser.teaser-floated-image(data-column-span='6')
+                        .teaser-image
+                          img(alt='', src='../../filtered/37865/rszww120h120-90/exploration200x200--489078627-rszww120h120-90.jpg')
+                        .teaser-content
+                          .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                            h3
+                              a(href='')
+                                | Containers
+                      .teaser.teaser-floated-image(data-column-span='6')
+                        .teaser-image
+                          img(alt='', src='../../filtered/37865/rszww120h120-90/exploration200x200--489078627-rszww120h120-90.jpg')
+                        .teaser-content
+                          .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                            h3
+                              a(href='')
+                                | Kärlvändare
+                      .teaser.teaser-floated-image(data-column-span='6')
+                        .teaser-image
+                          img(alt='', src='../../filtered/37865/rszww120h120-90/exploration200x200--489078627-rszww120h120-90.jpg')
+                        .teaser-content
+                          .teaser-heading.teaser-heading-small.teaser-heading-lowercase
+                            h3
+                              a(href='')
+                                | Balpressar
