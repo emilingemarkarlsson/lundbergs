@@ -205,12 +205,12 @@ pre {
 a {
   border-bottom: 1px solid #b2e0ff;
   border-bottom: 1px solid rgba(0, 153, 255, 0.3);
-  color: #09f;
+  color: #669fc6;
   text-decoration: none;
   &:visited {
     border-bottom: 1px solid #b2e0ff;
     border-bottom: 1px solid rgba(0, 153, 255, 0.3);
-    color: #09f;
+    color: #669fc6;
     text-decoration: none;
   }
 }
@@ -753,22 +753,22 @@ p {
 }
 
 caption + tbody tr:first-child .table-column-highlight, tbody:first-child tr:first-child .table-column-highlight {
-  border-top: 2px solid #09f;
+  border-top: 2px solid #669fc6;
 }
 
 thead tr:first-child {
   td.table-column-highlight, th.table-column-highlight {
-    border-top: 2px solid #09f;
+    border-top: 2px solid #669fc6;
   }
 }
 
 td.table-column-highlight, th.table-column-highlight {
-  border-right: 2px solid #09f;
-  border-left: 2px solid #09f;
+  border-right: 2px solid #669fc6;
+  border-left: 2px solid #669fc6;
 }
 
 tfoot td.table-column-highlight, thead + tbody tr:last-child td.td.table-column-highlight {
-  border-bottom: 2px solid #09f;
+  border-bottom: 2px solid #669fc6;
 }
 
 .kanthal {
@@ -809,7 +809,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading-type-1 {
   margin-bottom: 20px;
-  color: #09f;
+  color: #669fc6;
   font-size: 40px;
   line-height: 45px;
   text-transform: uppercase;
@@ -841,7 +841,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading-type-2 {
   margin-bottom: 20px;
-  color: #09f;
+  color: #669fc6;
   font-size: 30px;
   line-height: 35px;
   text-transform: uppercase;
@@ -858,7 +858,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .heading-type-3 {
-  color: #09f;
+  color: #669fc6;
   font-size: 60px;
   line-height: 65px;
 }
@@ -869,7 +869,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .heading-type-4 {
-  color: #09f;
+  color: #669fc6;
   font-size: 50px;
   line-height: 55px;
 }
@@ -1240,12 +1240,12 @@ textarea {
 
 input {
   &[type=text]:focus, &[type=url]:focus, &[type=email]:focus, &[type=tel]:focus, &[type=number]:focus, &[type=password]:focus, &[type=search]:focus {
-    border-color: #09f;
+    border-color: #669fc6;
   }
 }
 
 textarea:focus {
-  border-color: #09f;
+  border-color: #669fc6;
 }
 
 .kanthal {
@@ -3271,10 +3271,10 @@ a.button, button {
   overflow: visible;
   padding: 4px 30px;
   outline: 0;
-  border: 2px solid #09f;
+  border: 2px solid #669fc6;
   border-radius: 0;
   background-color: transparent;
-  color: #09f;
+  color: #669fc6;
   font-weight: 700;
   -moz-osx-font-smoothing: grayscale;
 
@@ -3298,10 +3298,10 @@ input {
     overflow: visible;
     padding: 4px 30px;
     outline: 0;
-    border: 2px solid #09f;
+    border: 2px solid #669fc6;
     border-radius: 0;
     background-color: transparent;
-    color: #09f;
+    color: #669fc6;
     font-weight: 700;
     -moz-osx-font-smoothing: grayscale;
 
@@ -3537,7 +3537,7 @@ button.link {
 }
 
 .button.button-style-3 {
-  background-color: #09f;
+  background-color: #669fc6;
   color: #fff;
 }
 
@@ -3629,7 +3629,7 @@ button.link {
     left: 0;
     width: 41px;
     height: 100%;
-    border-right: 1px solid #09f;
+    border-right: 1px solid #669fc6;
     text-align: left;
   }
 }
@@ -3862,7 +3862,7 @@ button.link {
   padding: 0;
   border: 0;
   background: 0 0;
-  color: #09f;
+  color: #669fc6;
   font-size: inherit;
   line-height: inherit;
   text-align: left;
@@ -3901,7 +3901,7 @@ a.text-button, button.text-button {
   display: inline-block;
   padding-top: 13px;
   border: none;
-  border-top: 1px solid #09f;
+  border-top: 1px solid #669fc6;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -4836,7 +4836,7 @@ a.text-button, button.text-button {
 
 .dialog-table .dialog-close {
   top: -60px;
-  background-color: #09f;
+  background-color: #669fc6;
   background-image: url("../images/i/close-white-20x20.svg");
 }
 
@@ -4858,19 +4858,19 @@ a.text-button, button.text-button {
 
 .dialog-image .dialog-close {
   &:focus, &:hover {
-    background-color: #09f;
+    background-color: #669fc6;
   }
 }
 
 .dialog-map .dialog-close {
   &:focus, &:hover {
-    background-color: #09f;
+    background-color: #669fc6;
   }
 }
 
 .dialog-video .dialog-close {
   &:focus, &:hover {
-    background-color: #09f;
+    background-color: #669fc6;
   }
 }
 
@@ -5209,7 +5209,7 @@ a.text-button, button.text-button {
 
 .share-teaser .value {
   margin-bottom: 15px;
-  color: #09f;
+  color: #669fc6;
   font-size: 70px;
   line-height: 1;
   white-space: nowrap;
@@ -5480,7 +5480,7 @@ a.text-button, button.text-button {
 
 [data-toggle] {
   &.collapsed [data-toggler-for] button {
-    color: #09f;
+    color: #669fc6;
     &:active, &:focus, &:hover {
       color: #005f9f;
     }
@@ -6109,11 +6109,11 @@ a.text-button, button.text-button {
       border-right: 1px solid #7fccff;
     }
     &:active, &:focus, &:hover {
-      border-color: #09f;
+      border-color: #669fc6;
       color: #000;
     }
     &:active span, &:focus span, &:hover span {
-      border-right-color: #09f;
+      border-right-color: #669fc6;
     }
   }
   .steel-description {
@@ -6579,7 +6579,7 @@ a.text-button, button.text-button {
   margin: 0;
   a {
     border: none;
-    background: #09f;
+    background: #669fc6;
     color: #fff;
     font-weight: 700;
     font-size: 14px;
@@ -6616,7 +6616,7 @@ a.text-button, button.text-button {
 }
 
 .module-highlight-alt {
-  border-color: #09f;
+  border-color: #669fc6;
 }
 
 .module-highlight > :last-child {
@@ -7088,7 +7088,7 @@ p.datasheet-info-updated {
 }
 
 .fat-number-cyan .fat-number-number {
-  color: #09f;
+  color: #669fc6;
 }
 
 .kanthal .fat-number-cyan .fat-number-number {
@@ -7992,7 +7992,7 @@ p.datasheet-info-updated {
 
 .aside {
   padding: 20px 25px 0;
-  border: 1px solid #09f;
+  border: 1px solid #669fc6;
 }
 
 .kanthal .aside {
@@ -8052,7 +8052,7 @@ p.datasheet-info-updated {
   p {
     margin-top: 8px;
     a {
-      border-bottom-color: #09f;
+      border-bottom-color: #669fc6;
     }
   }
 }
@@ -8109,7 +8109,7 @@ p.datasheet-info-updated {
 .cookie-message p a {
   &:active, &:focus, &:hover {
     border-bottom-color: transparent;
-    color: #09f;
+    color: #669fc6;
   }
 }
 
@@ -9418,7 +9418,7 @@ html:not(.kanthal) {
   &:active, &:focus, &:hover {
     border-bottom-color: #b2e0ff;
     border-bottom-color: rgba(0, 153, 255, 0.3);
-    color: #09f;
+    color: #669fc6;
   }
 }
 
@@ -9432,7 +9432,7 @@ html:not(.kanthal) {
 
 .page-dark .copyright a {
   &:active, &:focus, &:hover {
-    border-bottom-color: #09f;
+    border-bottom-color: #669fc6;
   }
 }
 
@@ -10105,7 +10105,7 @@ html:not(.kanthal) .language .change-language-link[data-popover-trigger]:before 
 
 .language .change-language-parent-site-link span {
   border-bottom: 1px solid;
-  border-bottom-color: #09f;
+  border-bottom-color: #669fc6;
   border-bottom-color: rgba(0, 153, 255, 0.3);
   transition: border .2s ease;
 }
@@ -10944,7 +10944,7 @@ html:not(.kanthal) .language .change-language-link[data-popover-trigger]:before 
 }
 
 .dark .ui-menu:before {
-  border-bottom-color: #09f;
+  border-bottom-color: #669fc6;
   background: #000 !important;
 }
 
@@ -10982,7 +10982,7 @@ html:not(.kanthal) .language .change-language-link[data-popover-trigger]:before 
 }
 
 .dark .ui-menu {
-  border-color: #09f;
+  border-color: #669fc6;
   box-shadow: none;
   background-color: #000;
 }
@@ -11160,13 +11160,13 @@ select.replaced {
 .custom-select.active {
   > span {
     position: relative;
-    border-color: #09f;
+    border-color: #669fc6;
     &:after {
       opacity: 1;
     }
   }
   span span {
-    border-color: #09f;
+    border-color: #669fc6;
   }
 }
 
@@ -11247,7 +11247,7 @@ select.replaced[disabled] + .custom-select span span {
 
 .on-page-search {
   .ui-menu:before {
-    border-color: #09f;
+    border-color: #669fc6;
     background: #f2faff;
   }
   .button {
@@ -11300,7 +11300,7 @@ select.replaced[disabled] + .custom-select span span {
   min-height: 112px;
   margin: 0 0 40px;
   padding: 15px 25px 0;
-  border: 1px solid #09f;
+  border: 1px solid #669fc6;
   text-align: left;
 }
 
@@ -11671,7 +11671,7 @@ input.has-datepicker {
     -webkit-transition: all 162ms ease;
     transition: all 162ms ease;
     &:focus, &:hover {
-      border-color: #09f;
+      border-color: #669fc6;
       border-color: rgba(0, 153, 255, 0.25);
     }
   }
@@ -11819,7 +11819,7 @@ input.has-datepicker {
 
 .search-results-popup li h3 {
   padding: 0;
-  color: #09f;
+  color: #669fc6;
   font-weight: 400;
   font-size: inherit;
   text-transform: none;
@@ -12912,7 +12912,7 @@ input.has-datepicker {
   margin-top: -35px;
   margin-left: -120px;
   padding: 21px 0 19px;
-  border: 2px solid #09f;
+  border: 2px solid #669fc6;
   font-weight: 600;
   font-size: 15px;
   text-align: center;
@@ -13777,7 +13777,7 @@ ul.carousel-big-slides-nav {
   &:active, &:focus, &:hover {
     border-bottom-color: #b2e0ff;
     border-bottom-color: rgba(0, 153, 255, 0.3);
-    color: #09f;
+    color: #669fc6;
   }
 }
 
@@ -14307,7 +14307,7 @@ ul.carousel-big-slides-nav {
   em {
     margin: -4px 2px 0;
     padding: 7px 12px 6px;
-    border: 1px solid #09f;
+    border: 1px solid #669fc6;
     font-style: normal;
   }
 }
@@ -14621,7 +14621,7 @@ ul.carousel-big-slides-nav {
     padding-top: 4px;
     padding-bottom: 3px;
     border-width: 1px 1px 2px;
-    color: #09f;
+    color: #669fc6;
   }
 }
 
@@ -15258,7 +15258,7 @@ ul.carousel-big-slides-nav {
     background: #e2221b;
   }
   .js .extra-header-with-blockquote {
-    background-color: #09f;
+    background-color: #669fc6;
   }
   .kanthal.js .extra-header-with-blockquote {
     background-color: #1a617f;
@@ -15533,7 +15533,7 @@ ul.carousel-big-slides-nav {
 
 .choice a {
   &:focus, &:hover {
-    color: #09f;
+    color: #669fc6;
   }
 }
 
@@ -15567,7 +15567,7 @@ ul.carousel-big-slides-nav {
 }
 
 .dark .choice a:after {
-  border-color: #09f;
+  border-color: #669fc6;
 }
 
 .choice {
@@ -15636,7 +15636,7 @@ ul.carousel-big-slides-nav {
   width: 100%;
   margin-bottom: 5px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #09f;
+  border-bottom: 1px solid #669fc6;
   transition: border .2s ease;
 }
 
@@ -16160,7 +16160,7 @@ div[data-column-span="12"]:not([class]) + div[data-column-span="12"] > .exp-sect
 }
 
 .exp-section.collapsed > h2 button {
-  color: #09f;
+  color: #669fc6;
 }
 
 .kanthal .exp-section.collapsed > h2 button {
@@ -16407,7 +16407,7 @@ a.exp-sections-product-cat-link {
 
 a.exp-sections-product-cat-link {
   strong {
-    color: #09f;
+    color: #669fc6;
     font-weight: inherit;
   }
   &:active, &:focus, &:hover {
@@ -17426,17 +17426,17 @@ button.search-other-websites-toggler {
 .country span {
   border-bottom: 1px solid #b2e0ff;
   border-bottom: 1px solid rgba(0, 153, 255, 0.3);
-  color: #09f;
+  color: #669fc6;
 }
 
 .country-multiple-languages a {
   border-bottom: 1px solid #b2e0ff;
   border-bottom: 1px solid rgba(0, 153, 255, 0.3);
-  color: #09f;
+  color: #669fc6;
   &:visited {
     border-bottom: 1px solid #b2e0ff;
     border-bottom: 1px solid rgba(0, 153, 255, 0.3);
-    color: #09f;
+    color: #669fc6;
   }
 }
 
@@ -18780,7 +18780,7 @@ a:hover .application-list-icon img + img {
     z-index: 2;
     min-width: 160px;
     padding: 7px 15px;
-    border: 2px solid #09f;
+    border: 2px solid #669fc6;
     background: #fff;
     font-weight: 600;
     font-size: 15px;
@@ -18813,7 +18813,7 @@ a:hover .application-list-icon img + img {
   }
   ul a {
     &:focus, &:hover {
-      color: #09f;
+      color: #669fc6;
     }
   }
 }
@@ -19024,12 +19024,12 @@ rect.highcharts-background {
 }
 
 .i--color-2 {
-  stroke: #09f;
+  stroke: #669fc6;
 }
 
 [data-icon-parent] {
   &:focus .i--hocus-color-1, &:hover .i--hocus-color-1 {
-    stroke: #09f;
+    stroke: #669fc6;
   }
 }
 
@@ -19349,7 +19349,7 @@ a {
     &:focus, &:hover {
       border-bottom-color: #b2e0ff;
       border-bottom-color: rgba(0, 153, 255, 0.3);
-      color: #09f;
+      color: #669fc6;
     }
   }
 }
@@ -19883,7 +19883,7 @@ a {
 }
 
 .impact-areas__area--2 .impact-areas__area-heading {
-  background: #09f;
+  background: #669fc6;
 }
 
 .impact-areas__dimensions {
@@ -19921,7 +19921,7 @@ a {
 }
 
 .impact-areas__area--2 .impact-areas__dimension-text {
-  border-color: #09f;
+  border-color: #669fc6;
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 701px) {
