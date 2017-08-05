@@ -232,8 +232,8 @@ a {
 
 a {
   &:active, &:focus, &:hover {
-    border-bottom-color: #005f9f;
-    color: #005f9f;
+    border-bottom-color: #4c90bd;
+    color: #4c90bd;
   }
 }
 
@@ -490,7 +490,7 @@ a > blockquote:after {
   content: "Read more";
   -webkit-transition: color 162ms ease;
   transition: color 162ms ease;
-  color: #1a617f;
+  color: #1db954;
 }
 
 [lang=sv] a > blockquote:after {
