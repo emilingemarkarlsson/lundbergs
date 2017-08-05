@@ -12,9 +12,9 @@ exports.produkter = (req, res) => {
     title: 'produkter'
   });
 };
-exports.produktemil = (req, res) => {
-  res.render('produktemil', {
-    title: 'produktemil'
+exports.stationara = (req, res) => {
+  res.render('stationara', {
+    title: 'Stationara'
   });
 };
 exports.inkastbank = (req, res) => {
@@ -30,5 +30,20 @@ exports.mindreverksamheter = (req, res) => {
 exports.vaccumsystemmedlagringstank = (req, res) => {
   res.render('vaccumsystemmedlagringstank', {
     title: 'Vaccumsystem med lagringstank'
+  });
+};
+exports.vataavfall = (req, res) => {
+  res.render('vataavfall', {
+    title: 'Våta avfall'
+  });
+};
+exports.karlvandare = (req, res) => {
+  res.render('karlvandare', {
+    title: 'Kärlvandare'
+  });
+};
+exports.mobila = (req, res) => {
+  res.render('mobila', {
+    title: 'Mobila'
   });
 };
