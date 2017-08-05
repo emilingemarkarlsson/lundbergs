@@ -123,7 +123,7 @@ app.get('/', homeController.index);
 app.get('/produkter', homeController.produkter);
 app.get('/stationara', homeController.stationara);
 app.get('/produkter/inkastbank', homeController.inkastbank);
-app.get('/mindreverksamheter', homeController.mindreverksamheter);
+app.get('/produkter/mindreverksamheter', homeController.mindreverksamheter);
 app.get('/produkter/vaccumsystemmedlagringstank', homeController.vaccumsystemmedlagringstank);
 app.get('/vataavfall', homeController.vataavfall);
 app.get('/karlvandare', homeController.karlvandare);
