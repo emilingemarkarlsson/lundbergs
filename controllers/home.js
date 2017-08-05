@@ -17,3 +17,18 @@ exports.produktemil = (req, res) => {
     title: 'produktemil'
   });
 };
+exports.inkastbank = (req, res) => {
+  res.render('inkastbank', {
+    title: 'Inkastbank med kvarn'
+  });
+};
+exports.mindreverksamheter = (req, res) => {
+  res.render('mindreverksamheter', {
+    title: 'mindreverksamheter'
+  });
+};
+exports.vaccumsystemmedlagringstank = (req, res) => {
+  res.render('vaccumsystemmedlagringstank', {
+    title: 'Vaccumsystem med lagringstank'
+  });
+};

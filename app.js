@@ -122,6 +122,9 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
 app.get('/', homeController.index);
 app.get('/produkter', homeController.produkter);
 app.get('/produktemil', homeController.produktemil);
+app.get('/inkastbank', homeController.inkastbank);
+app.get('/mindreverksamheter', homeController.mindreverksamheter);
+app.get('/vaccumsystemmedlagringstank', homeController.vaccumsystemmedlagringstank);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);
