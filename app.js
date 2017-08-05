@@ -121,13 +121,15 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
  */
 app.get('/', homeController.index);
 app.get('/produkter', homeController.produkter);
-app.get('/stationara', homeController.stationara);
+app.get('/produkter/stationara', homeController.stationara);
 app.get('/produkter/inkastbank', homeController.inkastbank);
 app.get('/produkter/mindreverksamheter', homeController.mindreverksamheter);
 app.get('/produkter/vaccumsystemmedlagringstank', homeController.vaccumsystemmedlagringstank);
-app.get('/vataavfall', homeController.vataavfall);
-app.get('/karlvandare', homeController.karlvandare);
-app.get('/mobila', homeController.mobila);
+app.get('/produkter/vataavfall', homeController.vataavfall);
+app.get('/produkter/karlvandare', homeController.karlvandare);
+app.get('/produkter/mobila', homeController.mobila);
+app.get('/produkter/containers', homeController.containers);
+app.get('/produkter/balpressar', homeController.balpressar);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);

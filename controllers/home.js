@@ -47,3 +47,13 @@ exports.mobila = (req, res) => {
     title: 'Mobila'
   });
 };
+exports.containers = (req, res) => {
+  res.render('containers', {
+    title: 'Containers'
+  });
+};
+exports.balpressar = (req, res) => {
+  res.render('balpressar', {
+    title: 'Balpressar'
+  });
+};
