@@ -124,7 +124,7 @@ app.get('/produkter', homeController.produkter);
 app.get('/produkter/stationara', homeController.stationara);
 app.get('/produkter/inkastbank', homeController.inkastbank);
 app.get('/produkter/mindreverksamheter', homeController.mindreverksamheter);
-app.get('/produkter/vaccumsystemmedlagringstank', homeController.vaccumsystemmedlagringstank);
+app.get('/produkter/Vakuumsystemmedlagringstank', homeController.Vakuumsystemmedlagringstank);
 app.get('/produkter/vataavfall', homeController.vataavfall);
 app.get('/produkter/karlvandare', homeController.karlvandare);
 app.get('/produkter/mobila', homeController.mobila);

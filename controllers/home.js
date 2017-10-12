@@ -27,8 +27,8 @@ exports.mindreverksamheter = (req, res) => {
     title: 'mindreverksamheter'
   });
 };
-exports.vaccumsystemmedlagringstank = (req, res) => {
-  res.render('vaccumsystemmedlagringstank', {
+exports.Vakuumsystemmedlagringstank = (req, res) => {
+  res.render('Vakuumsystemmedlagringstank', {
     title: 'Vaccumsystem med lagringstank'
   });
 };
